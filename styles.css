@@ -302,8 +302,22 @@ a:hover {
   margin-bottom: 0;
 }
 
+.prose-bio p {
+  margin: 0 0 0.75rem;
+}
+
+.prose-bio p:last-child {
+  margin-bottom: 0;
+}
+
 .prose strong {
   font-weight: 600;
+}
+
+/* Biography block: no bold in body copy (overrides .prose strong for this section). */
+.prose-bio strong,
+.prose-bio b {
+  font-weight: inherit;
 }
 
 .prose.muted {
