@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Luyang Wang — Crafts and handmade work">
+  <title>Crafts · Luyang Wang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Luyang Wang</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="crafts.html" aria-current="page">Crafts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="block page-intro">
+      <h1 class="page-title">Crafts / 手工</h1>
+      <hr class="section-rule">
+      <p class="prose">
+        这里会陆续放一些小手工、模型或杂项创作。页面结构已经搭好：之后每个作品可以用一张图 + 一段说明，或按时间线排列。
+      </p>
+      <p class="prose muted">
+        This page is reserved for handmade projects, models, and side crafts. Add images under <code class="inline-code">assets/crafts/</code> and duplicate the sample block below for each piece.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">Gallery</h2>
+      <hr class="section-rule">
+      <ul class="craft-grid">
+        <li class="craft-card">
+          <div class="craft-thumb" aria-hidden="true"></div>
+          <p class="craft-caption"><strong>Sample slot</strong> — 替换为作品标题与简介。</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Luyang Wang · <a href="index.html">Home</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -3,56 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Luyang Wang — Computer vision, 3D perception, and embedded ML">
+  <meta name="description" content="Luyang Wang — EVS / event-based vision, computer vision, and embedded sensing">
   <title>Luyang Wang</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#publications">Publications</a>
-    </nav>
+    <div class="header-inner">
+      <a class="brand" href="index.html">Luyang Wang</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="crafts.html">Crafts</a>
+      </nav>
+    </div>
   </header>
 
   <main class="wrap">
-    <section id="about" class="intro">
-      <img class="portrait" src="assets/photo.png" width="200" height="200" alt="Portrait of Luyang Wang">
-      <div class="intro-text">
-        <h1>Luyang Wang</h1>
-        <p class="tagline">Computer vision · 3D perception · Embedded &amp; robotics ML</p>
-        <p class="bio">
-          I am a machine learning engineer at <strong>Narwal</strong>, leading perception-related modules for the flagship Xiaoyao vacuum line.
-          Earlier I worked on ISP and imaging at <strong>SenseTime</strong> (shipping on Samsung and Oppo platforms) and on retrieval and AutoLabel at <strong>GDDi</strong>.
-          My background is in automation from <strong>Tsinghua</strong> (M.Eng.) and <strong>HUST</strong> (B.Eng.).
-        </p>
-        <ul class="contacts">
-          <li><a href="mailto:llcshappy@gmail.com">llcshappy@gmail.com</a></li>
-          <li><a href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-          <li><a href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        </ul>
+    <section id="about" class="about-block">
+      <div class="hero">
+        <div class="portrait-frame">
+          <img class="portrait" src="assets/photo.jpg" alt="Portrait of Luyang Wang">
+        </div>
+        <div class="hero-text">
+          <h1>Luyang Wang</h1>
+          <p class="role-line">Algorithm Expert · Alpsentek</p>
+          <p class="affil">EVS-based ultra-low-power sensing · algorithms &amp; applications</p>
+          <p class="email-line"><a href="mailto:llcshappy@gmail.com">llcshappy@gmail.com</a></p>
+          <ul class="hero-links">
+            <li><a href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+            <li><a href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
       </div>
+      <h2 class="section-title section-title--in-about">Biography</h2>
+      <hr class="section-rule">
+      <p class="prose">
+        I am an algorithm expert at <strong>Alpsentek</strong>, working on algorithms and applications built around <strong>EVS</strong> (event-based vision) for ultra-low-power sensing.
+        Previously I was perception PL for the <strong>Xiaoyao</strong> line at <strong>Narwal</strong> (semantic segmentation, stereo depth, and end-to-end upstream/downstream integration).
+        At <strong>SenseTime</strong> I focused on <strong>Remosaic</strong> and broader <strong>image-quality (IQ)</strong> algorithms for mobile ISP pipelines.
+        My background is in automation from <strong>Tsinghua</strong> (M.Eng.) and <strong>HUST</strong> (B.Eng.).
+      </p>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <ul class="flat-list">
-        <li><span class="degree">M.Eng., Automation</span> — Tsinghua University <span class="dates">Sep 2016 – Jun 2019</span></li>
-        <li><span class="degree">B.Eng., Automation</span> — Huazhong University of Science and Technology <span class="dates">Sep 2011 – Jun 2015</span></li>
+    <section id="education" class="block">
+      <h2 class="section-title">Education</h2>
+      <hr class="section-rule">
+      <ul class="edu-list">
+        <li class="edu-row">
+          <img class="edu-logo" src="assets/edu/tsinghua.svg" width="48" height="48" alt="" decoding="async" loading="lazy">
+          <div class="edu-text">
+            <div class="edu-school">Tsinghua University</div>
+            <div class="edu-degree">M.Eng., Automation</div>
+          </div>
+        </li>
+        <li class="edu-row">
+          <img class="edu-logo" src="assets/edu/hust.svg" width="48" height="48" alt="" decoding="async" loading="lazy">
+          <div class="edu-text">
+            <div class="edu-school">Huazhong University of Science and Technology</div>
+            <div class="edu-degree">B.Eng., Automation</div>
+          </div>
+        </li>
       </ul>
     </section>
 
-    <section id="skills">
-      <h2>Technical skills</h2>
+    <section id="skills" class="block">
+      <h2 class="section-title">Technical skills</h2>
+      <hr class="section-rule">
       <dl class="skills">
         <dt>Computer vision</dt>
-        <dd>Stereo matching, semantic segmentation, retrieval, quantization &amp; compression, open-vocabulary detection, RAW/ISP pipelines.</dd>
+        <dd>Event-based / EVS vision, stereo matching, semantic segmentation, RAW/ISP and Remosaic-style pipelines, quantization &amp; edge deployment.</dd>
         <dt>Languages &amp; frameworks</dt>
         <dd>Python, C/C++, MATLAB · PyTorch, TensorFlow, ONNX Runtime, OpenMMLab ecosystem.</dd>
         <dt>Edge deployment</dt>
@@ -62,73 +87,97 @@
       </dl>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
+    <section id="experience" class="block">
+      <h2 class="section-title">Experience</h2>
+      <hr class="section-rule">
 
       <article class="job">
         <header>
-          <h3>Narwal · Machine Learning Engineer</h3>
-          <time datetime="2023-08">Aug 2023</time><span class="sep">–</span><span>Present</span>
+          <h3>Alpsentek · Algorithm Expert</h3>
+          <span class="job-dates"><time datetime="2026-04">Apr 2026</time><span class="sep">–</span><span>Present</span></span>
         </header>
         <ul>
-          <li><strong>ML lead (Xiaoyao 002).</strong> Own end-to-end ML for the flagship line: data acquisition design, model architecture iteration (large pre-labeling segmentation models, onboard segmentation), engineering issues (e.g. carpet cliff false triggers), testing, and cross-team integration.</li>
-          <li><strong>Data-loop platform.</strong> Pipelines with DINO, Mask2Former, and Glee for filtering, labeling, and cleaning at scale; substantial reduction in manual labeling cost annually; BI dashboards for benchmarks and data distribution.</li>
-          <li><strong>On-robot deployment.</strong> PTQ and acceleration for segmentation, detection, stereo depth, and retrieval; stereo depth latency reduced from 160&nbsp;ms → 80&nbsp;ms on Horizon X5M and 160&nbsp;ms → 66&nbsp;ms on Allwinner MR536; binocular setups maintain depth error below ~5&nbsp;mm.</li>
-          <li><strong>Exploratory work.</strong> YOLOE-style open-vocabulary detection on X5M (~100&nbsp;ms demo); lightweight convolutional BEV occupancy designs for embedded compute.</li>
+          <li>Algorithms and product-side work based on <strong>EVS</strong> (event-based vision sensors) for <strong>ultra-low-power</strong> perception stacks.</li>
         </ul>
       </article>
 
       <article class="job">
         <header>
-          <h3>GDDi · Senior Algorithm Engineer</h3>
-          <time datetime="2022-11">Nov 2022</time><span class="sep">–</span><time datetime="2023-08">Aug 2023</time>
+          <h3>Narwal · Machine Learning Engineer</h3>
+          <span class="job-dates"><time datetime="2023-08">Aug 2023</time><span class="sep">–</span><time datetime="2026-04">Apr 2026</time></span>
         </header>
         <ul>
-          <li>General-purpose, chip-friendly image retrieval serving diverse customer scenarios (wildlife ID, office scenes, similarity search) across NVIDIA, Cambricon, Bitmain, and similar platforms.</li>
-          <li>AutoLabel tooling built on large models with task-specific finetuning; roughly 50% faster labeling on major internal datasets.</li>
+          <li>Perception PL for the <strong>Xiaoyao</strong> line: <strong>semantic segmentation</strong>, <strong>binocular stereo depth</strong>, and coordination across data, models, onboard deployment, and partner teams.</li>
         </ul>
       </article>
 
       <article class="job">
         <header>
           <h3>SenseTime · Senior Algorithm Researcher</h3>
-          <time datetime="2019-04">Apr 2019</time><span class="sep">–</span><time datetime="2022-11">Nov 2022</time>
+          <span class="job-dates"><time datetime="2019-04">Apr 2019</time><span class="sep">–</span><time datetime="2022-11">Nov 2022</time></span>
         </header>
         <ul>
-          <li><strong>Sony 2×2 OCL tuning:</strong> ISP-style pipeline design for artifacts (purple fringing, false color, PD/SD); exceeded Sony reference quality and passed customer acceptance; shipped on Samsung Galaxy S24.</li>
-          <li><strong>Oppo RawSR SDK:</strong> RAW demosaic outperforming Qualcomm ISP baselines on challenging edges and singularities.</li>
-          <li><strong>Sony IMX777:</strong> First mass-produced &gt;100&nbsp;MP RGB sensor program; addressed OuterSD, pattern noise, and false color through iterative tuning.</li>
-          <li><strong>AiToF SDK:</strong> Learning-based enhancement for iToF depth (noise, multipath, completion) with compressed models for real-time mobile inference.</li>
+          <li><strong>Remosaic</strong> / RAW demosaic and related pipeline modules for flagship mobile sensors.</li>
+          <li>Customer-facing <strong>image quality (IQ)</strong> tuning and artifact control for ISP-style stacks.</li>
         </ul>
       </article>
 
       <article class="job">
         <header>
           <h3>SenseTime · Research Intern</h3>
-          <time datetime="2017-06">Jun 2017</time><span class="sep">–</span><time datetime="2018-09">Sep 2018</time>
+          <span class="job-dates"><time datetime="2017-06">Jun 2017</time><span class="sep">–</span><time datetime="2018-09">Sep 2018</time></span>
         </header>
         <ul>
-          <li>Monocular 3D human pose in the wild: Unity-based synthetic data, stereo-assisted pseudo-3D labels, and robust real-scene generalization; dataset and code released openly.</li>
+          <li>Monocular 3D human pose in the wild (ICCVW); synthetic data, pseudo-3D labels, and open release.</li>
         </ul>
       </article>
     </section>
 
-    <section id="publications">
-      <h2>Publications &amp; recognition</h2>
-      <ul class="pubs">
-        <li>L. Wang, Y. Chen, Z. Guo, K. Qian, M. Lin, H. Li, J. S. Ren. <em>Generalizing monocular 3D human pose estimation in the wild.</em> ICCV Workshops, 2019.</li>
-        <li>L. Wang, Y. Shen, H. Liu, Z. Guo. <em>An accurate and efficient multi-category edge detection method.</em> Cognitive Systems Research, 2019.</li>
-        <li>R. Tang, L. Wang, Z. Guo. <em>A multi-task neural network for action recognition with 3D key-points.</em> ICPR, 2021.</li>
-        <li>Y. Chen, J. Ren, X. Cheng, K. Qian, L. Wang, J. Gu. <em>Very power efficient neural time-of-flight.</em> WACV, 2020.</li>
+    <section id="publications" class="block">
+      <h2 class="section-title">Publications</h2>
+      <hr class="section-rule">
+      <p class="pub-intro">Selected papers. Thumbnails live under <code class="inline-code">assets/pubs/</code> (optional).</p>
+
+      <ul class="pub-list">
+        <li class="pub-row">
+          <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+            <img src="assets/pubs/iccvw2019.png" alt="" width="160" height="120" loading="lazy" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+          </a>
+          <div class="pub-body">
+            <p class="pub-title"><em>Generalizing monocular 3D human pose estimation in the wild.</em></p>
+            <p class="pub-meta">L. Wang, Y. Chen, Z. Guo, K. Qian, M. Lin, H. Li, J. S. Ren · ICCV Workshops, 2019</p>
+          </div>
+        </li>
+        <li class="pub-row">
+          <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+            <img src="assets/pubs/csr2019.png" alt="" width="160" height="120" loading="lazy" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+          </a>
+          <div class="pub-body">
+            <p class="pub-title"><em>An accurate and efficient multi-category edge detection method.</em></p>
+            <p class="pub-meta">L. Wang, Y. Shen, H. Liu, Z. Guo · Cognitive Systems Research, 2019</p>
+          </div>
+        </li>
+        <li class="pub-row">
+          <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+            <img src="assets/pubs/icpr2021.png" alt="" width="160" height="120" loading="lazy" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+          </a>
+          <div class="pub-body">
+            <p class="pub-title"><em>A multi-task neural network for action recognition with 3D key-points.</em></p>
+            <p class="pub-meta">R. Tang, L. Wang, Z. Guo · ICPR, 2021</p>
+          </div>
+        </li>
+        <li class="pub-row">
+          <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+            <img src="assets/pubs/wacv2020.png" alt="" width="160" height="120" loading="lazy" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+          </a>
+          <div class="pub-body">
+            <p class="pub-title"><em>Very power efficient neural time-of-flight.</em></p>
+            <p class="pub-meta">Y. Chen, J. Ren, X. Cheng, K. Qian, L. Wang, J. Gu · WACV, 2020</p>
+          </div>
+        </li>
       </ul>
-      <ul class="extras">
-        <li>Seven granted Chinese patents.</li>
-        <li>Contributor to AIIA Model/MLOps capability assessment standards.</li>
-        <li>Narwal “Efficient Platform Construction” award (2024); consecutive top performance ratings.</li>
-        <li>Demo support for product launches, including CES&nbsp;2024 and AWE&nbsp;2025 robotics perception showcases.</li>
-        <li>Open-source resources: <a href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer">github.com/llcshappy</a></li>
-      </ul>
-      <p class="scholar-link"><a class="btn-scholar" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Full list on Google Scholar</a></p>
+
+      <p class="scholar-link"><a class="btn-scholar" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Full list on Google Scholar</a></p>
     </section>
   </main>
 

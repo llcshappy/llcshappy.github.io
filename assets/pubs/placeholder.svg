@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Paper thumbnail placeholder">
+  <rect width="320" height="240" fill="#eef1f5"/>
+  <rect x="48" y="56" width="224" height="128" rx="4" fill="#dce3ed"/>
+  <text x="160" y="128" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#7a8699">Thumbnail</text>
+</svg>
