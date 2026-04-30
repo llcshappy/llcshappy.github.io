@@ -200,18 +200,9 @@ a:hover {
 }
 
 .affil {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.65rem;
   font-size: 0.92rem;
   color: var(--muted);
-}
-
-.email-line {
-  margin: 0 0 0.65rem;
-  font-size: 0.95rem;
-}
-
-.email-line a {
-  font-weight: 500;
 }
 
 .hero-links {
@@ -226,6 +217,41 @@ a:hover {
 
 .hero-links a {
   font-weight: 500;
+}
+
+.hero-links--icons {
+  gap: 0.55rem;
+}
+
+.hero-links--icons .icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  background: #f4f5f7;
+  border: 1px solid var(--rule);
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-links--icons .icon-link:hover {
+  background: #e8eaef;
+  border-color: #ccc;
+}
+
+.hero-links--icons .icon-link:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.hero-icon-img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
 }
 
 .section-title--in-about {

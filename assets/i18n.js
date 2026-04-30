@@ -14,6 +14,7 @@
       "nav.home": "Home",
       "hero.scholar": "Google Scholar",
       "hero.github": "GitHub",
+      "hero.email": "Email via Gmail",
       "title.index": "Luyang Wang",
       "title.crafts": "Crafts · Luyang Wang",
       "title.notes": "Notes · Luyang Wang",
@@ -94,6 +95,7 @@
       "nav.home": "首页",
       "hero.scholar": "谷歌学术",
       "hero.github": "GitHub",
+      "hero.email": "通过 Gmail 发邮件",
       "title.index": "王路阳",
       "title.crafts": "手工 · 王路阳",
       "title.notes": "随记 · 王路阳",
@@ -198,6 +200,11 @@
     document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
       var key = el.getAttribute("data-i18n-alt");
       if (key && dict[key]) el.setAttribute("alt", dict[key]);
+    });
+
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-aria-label");
+      if (key && dict[key]) el.setAttribute("aria-label", dict[key]);
     });
 
     var titleKey = "title." + page;
