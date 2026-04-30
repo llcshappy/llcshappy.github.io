@@ -9,6 +9,12 @@
   --link-hover: #0842a0;
   --header-border: #e8e8e8;
   --max: 52rem;
+  /* Chinese UI (Windows / Linux names + webfont fallback on macOS) */
+  --font-zh-sans:
+    "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei", "Noto Sans SC", system-ui,
+    -apple-system, sans-serif;
+  --font-zh-serif:
+    "Source Serif 4", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei", "Noto Sans SC", serif;
 }
 
 *,
@@ -31,6 +37,37 @@ body {
   color: var(--text);
   background: transparent;
   overflow-x: hidden;
+}
+
+/* Chinese typography: font stack + slightly looser line-height */
+html:lang(zh-Hans) body {
+  font-family: var(--font-zh-sans);
+  line-height: 1.75;
+}
+
+html:lang(zh-Hans) .hero-text h1,
+html:lang(zh-Hans) .section-title,
+html:lang(zh-Hans) .page-title,
+html:lang(zh-Hans) .subsection-title,
+html:lang(zh-Hans) .note-title,
+html:lang(zh-Hans) .pub-title {
+  font-family: var(--font-zh-serif);
+  letter-spacing: 0;
+}
+
+html:lang(zh-Hans) .hero-text h1 {
+  line-height: 1.28;
+}
+
+html:lang(zh-Hans) .role-line,
+html:lang(zh-Hans) .note-date {
+  letter-spacing: normal;
+}
+
+html:lang(zh-Hans) .note-body,
+html:lang(zh-Hans) .prose-bio,
+html:lang(zh-Hans) .prose {
+  line-height: 1.78;
 }
 
 /* tsParticles network (links preset) — behind content */
