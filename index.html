@@ -10,18 +10,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="index">
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">Luyang Wang</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html#about">About</a>
-        <a href="index.html#education">Education</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#publications">Publications</a>
-        <a href="notes.html">Notes</a>
-        <a href="crafts.html">Crafts</a>
-      </nav>
+      <div class="header-tray">
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#about" data-i18n="nav.about">About</a>
+          <a href="index.html#education" data-i18n="nav.education">Education</a>
+          <a href="index.html#experience" data-i18n="nav.experience">Experience</a>
+          <a href="index.html#publications" data-i18n="nav.publications">Publications</a>
+          <a href="notes.html" data-i18n="nav.notes">Notes</a>
+          <a href="crafts.html" data-i18n="nav.crafts">Crafts</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Choose language">
+          <button type="button" class="lang-btn is-active" data-set-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-set-lang="zh" aria-pressed="false">中文</button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -29,22 +36,22 @@
     <section id="about" class="about-block">
       <div class="hero">
         <div class="portrait-frame">
-          <img class="portrait" src="assets/photo.jpg" alt="Portrait of Luyang Wang">
+          <img class="portrait" src="assets/photo.jpg" alt="Portrait of Luyang Wang" data-i18n-alt="portrait.alt">
         </div>
         <div class="hero-text">
           <h1>Luyang Wang</h1>
-          <p class="role-line">Algorithm Expert · Alpsentek</p>
-          <p class="affil">EVS-based ultra-low-power sensing · algorithms &amp; applications</p>
+          <p class="role-line" data-i18n="role.line">Algorithm Expert · Alpsentek</p>
+          <p class="affil" data-i18n="affil">EVS-based ultra-low-power sensing · algorithms &amp; applications</p>
           <p class="email-line"><a href="mailto:llcshappy@gmail.com">llcshappy@gmail.com</a></p>
           <ul class="hero-links">
-            <li><a href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-            <li><a href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" data-i18n="hero.scholar">Google Scholar</a></li>
+            <li><a href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer" data-i18n="hero.github">GitHub</a></li>
           </ul>
         </div>
       </div>
-      <h2 class="section-title section-title--in-about">Biography</h2>
+      <h2 class="section-title section-title--in-about" data-i18n="section.biography">Biography</h2>
       <hr class="section-rule">
-      <p class="prose">
+      <p class="prose" data-i18n="bio" data-i18n-html="true">
         I am an algorithm expert at <strong>Alpsentek</strong>, working on algorithms and applications built around <strong>EVS</strong> (event-based vision) for ultra-low-power sensing.
         Previously I was perception PL for the <strong>Xiaoyao</strong> line at <strong>Narwal</strong> (semantic segmentation, stereo depth, and end-to-end upstream/downstream integration).
         At <strong>SenseTime</strong> I focused on <strong>Remosaic</strong> and broader <strong>image-quality (IQ)</strong> algorithms for mobile ISP pipelines.
@@ -53,96 +60,96 @@
     </section>
 
     <section id="education" class="block">
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-title" data-i18n="section.education">Education</h2>
       <hr class="section-rule">
       <ul class="edu-list">
         <li class="edu-row">
           <img class="edu-logo" src="assets/edu/thu.png" width="56" height="56" alt="" decoding="async" loading="lazy">
           <div class="edu-text">
-            <div class="edu-school">Tsinghua University</div>
-            <div class="edu-degree">M.Eng., Automation</div>
+            <div class="edu-school" data-i18n="edu.tsinghua.school">Tsinghua University</div>
+            <div class="edu-degree" data-i18n="edu.tsinghua.degree">M.Eng., Automation</div>
           </div>
         </li>
         <li class="edu-row">
           <img class="edu-logo" src="assets/edu/hust.jpeg" width="56" height="56" alt="" decoding="async" loading="lazy">
           <div class="edu-text">
-            <div class="edu-school">Huazhong University of Science and Technology</div>
-            <div class="edu-degree">B.Eng., Automation</div>
+            <div class="edu-school" data-i18n="edu.hust.school">Huazhong University of Science and Technology</div>
+            <div class="edu-degree" data-i18n="edu.hust.degree">B.Eng., Automation</div>
           </div>
         </li>
       </ul>
     </section>
 
     <section id="skills" class="block">
-      <h2 class="section-title">Technical skills</h2>
+      <h2 class="section-title" data-i18n="section.skills">Technical skills</h2>
       <hr class="section-rule">
       <dl class="skills">
-        <dt>Computer vision</dt>
-        <dd>Event-based / EVS vision, stereo matching, semantic segmentation, RAW/ISP and Remosaic-style pipelines, quantization &amp; edge deployment.</dd>
-        <dt>Languages &amp; frameworks</dt>
-        <dd>Python, C/C++, MATLAB · PyTorch, TensorFlow, ONNX Runtime, OpenMMLab ecosystem.</dd>
-        <dt>Edge deployment</dt>
-        <dd>Horizon X5M, Allwinner MR536 — PTQ, latency optimization, accuracy alignment.</dd>
-        <dt>Tooling</dt>
-        <dd>Linux, Git, Docker, SQL, Streamlit, Gradio.</dd>
+        <dt data-i18n="skills.cv.dt">Computer vision</dt>
+        <dd data-i18n="skills.cv.dd">Event-based / EVS vision, stereo matching, semantic segmentation, RAW/ISP and Remosaic-style pipelines, quantization &amp; edge deployment.</dd>
+        <dt data-i18n="skills.lang.dt">Languages &amp; frameworks</dt>
+        <dd data-i18n="skills.lang.dd">Python, C/C++, MATLAB · PyTorch, TensorFlow, ONNX Runtime, OpenMMLab ecosystem.</dd>
+        <dt data-i18n="skills.edge.dt">Edge deployment</dt>
+        <dd data-i18n="skills.edge.dd">Horizon X5M, Allwinner MR536 — PTQ, latency optimization, accuracy alignment.</dd>
+        <dt data-i18n="skills.tool.dt">Tooling</dt>
+        <dd data-i18n="skills.tool.dd">Linux, Git, Docker, SQL, Streamlit, Gradio.</dd>
       </dl>
     </section>
 
     <section id="experience" class="block">
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title" data-i18n="section.experience">Experience</h2>
       <hr class="section-rule">
 
       <article class="job">
         <header>
-          <h3>Alpsentek · Algorithm Expert</h3>
-          <span class="job-dates"><time datetime="2026-04">Apr 2026</time><span class="sep">–</span><span>Present</span></span>
+          <h3 data-i18n="job.alps.title">Alpsentek · Algorithm Expert</h3>
+          <span class="job-dates"><span data-i18n="job.alps.dates">Apr 2026 – Present</span></span>
         </header>
         <ul>
-          <li>Algorithms and product-side work based on <strong>EVS</strong> (event-based vision sensors) for <strong>ultra-low-power</strong> perception stacks.</li>
+          <li data-i18n="job.alps.li1" data-i18n-html="true">Algorithms and product-side work based on <strong>EVS</strong> (event-based vision sensors) for <strong>ultra-low-power</strong> perception stacks.</li>
         </ul>
       </article>
 
       <article class="job">
         <header>
-          <h3>Narwal · Machine Learning Engineer</h3>
-          <span class="job-dates"><time datetime="2023-08">Aug 2023</time><span class="sep">–</span><time datetime="2026-04">Apr 2026</time></span>
+          <h3 data-i18n="job.narwal.title">Narwal · Machine Learning Engineer</h3>
+          <span class="job-dates"><span data-i18n="job.narwal.dates">Aug 2023 – Apr 2026</span></span>
         </header>
         <ul>
-          <li>Perception PL for the <strong>Xiaoyao</strong> line: <strong>semantic segmentation</strong>, <strong>binocular stereo depth</strong>, and coordination across data, models, onboard deployment, and partner teams.</li>
+          <li data-i18n="job.narwal.li1" data-i18n-html="true">Perception PL for the <strong>Xiaoyao</strong> line: <strong>semantic segmentation</strong>, <strong>binocular stereo depth</strong>, and coordination across data, models, onboard deployment, and partner teams.</li>
         </ul>
       </article>
 
       <article class="job">
         <header>
-          <h3>SenseTime · Senior Algorithm Researcher</h3>
-          <span class="job-dates"><time datetime="2019-04">Apr 2019</time><span class="sep">–</span><time datetime="2022-11">Nov 2022</time></span>
+          <h3 data-i18n="job.stsr.title">SenseTime · Senior Algorithm Researcher</h3>
+          <span class="job-dates"><span data-i18n="job.stsr.dates">Apr 2019 – Nov 2022</span></span>
         </header>
         <ul>
-          <li><strong>Remosaic</strong> / RAW demosaic and related pipeline modules for flagship mobile sensors.</li>
-          <li>Customer-facing <strong>image quality (IQ)</strong> tuning and artifact control for ISP-style stacks.</li>
+          <li data-i18n="job.stsr.li1" data-i18n-html="true"><strong>Remosaic</strong> / RAW demosaic and related pipeline modules for flagship mobile sensors.</li>
+          <li data-i18n="job.stsr.li2" data-i18n-html="true">Customer-facing <strong>image quality (IQ)</strong> tuning and artifact control for ISP-style stacks.</li>
         </ul>
       </article>
 
       <article class="job">
         <header>
-          <h3>SenseTime · Research Intern</h3>
-          <span class="job-dates"><time datetime="2017-06">Jun 2017</time><span class="sep">–</span><time datetime="2018-09">Sep 2018</time></span>
+          <h3 data-i18n="job.stin.title">SenseTime · Research Intern</h3>
+          <span class="job-dates"><span data-i18n="job.stin.dates">Jun 2017 – Sep 2018</span></span>
         </header>
         <ul>
-          <li>Monocular 3D human pose in the wild (ICCVW); synthetic data, pseudo-3D labels, and open release.</li>
+          <li data-i18n="job.stin.li1">Monocular 3D human pose in the wild (ICCVW); synthetic data, pseudo-3D labels, and open release.</li>
         </ul>
       </article>
     </section>
 
     <section id="publications" class="block">
-      <h2 class="section-title">Publications</h2>
+      <h2 class="section-title" data-i18n="section.pubs">Publications</h2>
       <hr class="section-rule">
-      <p class="pub-intro">Selected papers (thumbnails are optional).</p>
+      <p class="pub-intro" data-i18n="pub.intro">Selected papers (thumbnails are optional).</p>
 
       <ul class="pub-list">
         <li class="pub-row">
           <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="assets/pubs/3Dhumanpose.png" alt="Thumbnail: monocular 3D human pose" width="160" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+            <img src="assets/pubs/3Dhumanpose.png" alt="Thumbnail: monocular 3D human pose" width="160" height="120" loading="lazy" decoding="async" data-i18n-alt="pub.alt.pose" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
           </a>
           <div class="pub-body">
             <p class="pub-title"><em>Generalizing monocular 3D human pose estimation in the wild.</em></p>
@@ -151,7 +158,7 @@
         </li>
         <li class="pub-row">
           <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="assets/pubs/edge.jpg" alt="Thumbnail: edge detection" width="160" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+            <img src="assets/pubs/edge.jpg" alt="Thumbnail: edge detection" width="160" height="120" loading="lazy" decoding="async" data-i18n-alt="pub.alt.edge" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
           </a>
           <div class="pub-body">
             <p class="pub-title"><em>An accurate and efficient multi-category edge detection method.</em></p>
@@ -160,7 +167,7 @@
         </li>
         <li class="pub-row">
           <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="assets/pubs/action.png" alt="Thumbnail: action recognition" width="160" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+            <img src="assets/pubs/action.png" alt="Thumbnail: action recognition" width="160" height="120" loading="lazy" decoding="async" data-i18n-alt="pub.alt.action" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
           </a>
           <div class="pub-body">
             <p class="pub-title"><em>A multi-task neural network for action recognition with 3D key-points.</em></p>
@@ -169,7 +176,7 @@
         </li>
         <li class="pub-row">
           <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="assets/pubs/tof.png" alt="Thumbnail: neural time-of-flight" width="160" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+            <img src="assets/pubs/tof.png" alt="Thumbnail: neural time-of-flight" width="160" height="120" loading="lazy" decoding="async" data-i18n-alt="pub.alt.tof" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
           </a>
           <div class="pub-body">
             <p class="pub-title"><em>Very power efficient neural time-of-flight.</em></p>
@@ -178,7 +185,7 @@
         </li>
       </ul>
 
-      <p class="scholar-link"><a class="btn-scholar" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Full list on Google Scholar</a></p>
+      <p class="scholar-link"><a class="btn-scholar" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" data-i18n="pub.scholar">Full list on Google Scholar</a></p>
     </section>
   </main>
 
@@ -186,8 +193,6 @@
     <p>© <span id="y">2026</span> Luyang Wang</p>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/i18n.js" defer></script>
 </body>
 </html>

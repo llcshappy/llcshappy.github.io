@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,51 +10,56 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="crafts">
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">Luyang Wang</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html#about">About</a>
-        <a href="index.html#education">Education</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#publications">Publications</a>
-        <a href="notes.html">Notes</a>
-        <a href="crafts.html" aria-current="page">Crafts</a>
-      </nav>
+      <div class="header-tray">
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#about" data-i18n="nav.about">About</a>
+          <a href="index.html#education" data-i18n="nav.education">Education</a>
+          <a href="index.html#experience" data-i18n="nav.experience">Experience</a>
+          <a href="index.html#publications" data-i18n="nav.publications">Publications</a>
+          <a href="notes.html" data-i18n="nav.notes">Notes</a>
+          <a href="crafts.html" aria-current="page" data-i18n="nav.crafts">Crafts</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Choose language">
+          <button type="button" class="lang-btn is-active" data-set-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-set-lang="zh" aria-pressed="false">中文</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <main class="wrap">
     <section class="block page-intro">
-      <h1 class="page-title">Crafts / 手工</h1>
+      <h1 class="page-title" data-i18n="crafts.h1">Crafts / 手工</h1>
       <hr class="section-rule">
-      <p class="prose">
+      <p class="prose" data-i18n="crafts.p1">
         这里会陆续放一些小手工、模型或杂项创作。页面结构已经搭好：之后每个作品可以用一张图 + 一段说明，或按时间线排列。
       </p>
-      <p class="prose muted">
+      <p class="prose muted" data-i18n="crafts.p2" data-i18n-html="true">
         This page is reserved for handmade projects, models, and side crafts. Add images under <code class="inline-code">assets/crafts/</code> and duplicate the sample block below for each piece.
       </p>
     </section>
 
     <section class="block">
-      <h2 class="section-title">Gallery</h2>
+      <h2 class="section-title" data-i18n="crafts.gallery">Gallery</h2>
       <hr class="section-rule">
       <ul class="craft-grid">
         <li class="craft-card">
           <div class="craft-thumb" aria-hidden="true"></div>
-          <p class="craft-caption"><strong>Sample slot</strong> — 替换为作品标题与简介。</p>
+          <p class="craft-caption" data-i18n="crafts.sample" data-i18n-html="true"><strong>Sample slot</strong> — 替换为作品标题与简介。</p>
         </li>
       </ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="y">2026</span> Luyang Wang · <a href="index.html">Home</a></p>
+    <p>© <span id="y">2026</span> Luyang Wang · <a href="index.html" data-i18n="nav.home">Home</a></p>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/i18n.js" defer></script>
 </body>
 </html>

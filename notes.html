@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,41 +10,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="notes">
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">Luyang Wang</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html#about">About</a>
-        <a href="index.html#education">Education</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#publications">Publications</a>
-        <a href="notes.html" aria-current="page">Notes</a>
-        <a href="crafts.html">Crafts</a>
-      </nav>
+      <div class="header-tray">
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#about" data-i18n="nav.about">About</a>
+          <a href="index.html#education" data-i18n="nav.education">Education</a>
+          <a href="index.html#experience" data-i18n="nav.experience">Experience</a>
+          <a href="index.html#publications" data-i18n="nav.publications">Publications</a>
+          <a href="notes.html" aria-current="page" data-i18n="nav.notes">Notes</a>
+          <a href="crafts.html" data-i18n="nav.crafts">Crafts</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Choose language">
+          <button type="button" class="lang-btn is-active" data-set-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-set-lang="zh" aria-pressed="false">中文</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <main class="wrap">
     <section class="block page-intro">
-      <h1 class="page-title">Notes / 随记</h1>
+      <h1 class="page-title" data-i18n="notes.h1">Notes / 随记</h1>
       <hr class="section-rule">
-      <p class="prose">
+      <p class="prose" data-i18n="notes.p1" data-i18n-html="true">
         记录日常技术分享、阅读笔记与工程心得。按时间倒序排列；新条目可复制下方 <code class="inline-code">&lt;li&gt;</code> 模板追加到列表顶部。
       </p>
-      <p class="prose muted">
+      <p class="prose muted" data-i18n="notes.p2" data-i18n-html="true">
         Short posts on engineering, papers, and side thoughts. Duplicate a <code class="inline-code">note-entry</code> block for each new post.
       </p>
     </section>
 
     <section class="block">
-      <h2 class="section-title">Recent</h2>
+      <h2 class="section-title" data-i18n="notes.recent">Recent</h2>
       <hr class="section-rule">
       <ul class="note-list">
         <li class="note-entry">
           <p class="note-date">2026-04-30</p>
-          <h2 class="note-title">站点更新：版式与论文缩略图</h2>
-          <div class="note-body">
+          <h2 class="note-title" data-i18n="notes.sample.title">站点更新：版式与论文缩略图</h2>
+          <div class="note-body" data-i18n="notes.sample.body" data-i18n-html="true">
             <p>统一了页面背景与主栏宽度，论文配图改为与 <code class="inline-code">assets/pubs/</code> 下文件名一致；并增加本页作为随记入口。</p>
           </div>
         </li>
@@ -53,11 +60,9 @@
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="y">2026</span> Luyang Wang · <a href="index.html">Home</a></p>
+    <p>© <span id="y">2026</span> Luyang Wang · <a href="index.html" data-i18n="nav.home">Home</a></p>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/i18n.js" defer></script>
 </body>
 </html>

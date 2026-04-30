@@ -93,6 +93,51 @@ a:hover {
   font-weight: 600;
 }
 
+.header-tray {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.65rem 1.25rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem;
+  flex-shrink: 0;
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--muted);
+  padding: 0.28rem 0.45rem;
+  border-radius: 4px;
+  line-height: 1.2;
+}
+
+.lang-btn:hover {
+  color: var(--accent);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.lang-btn.is-active {
+  color: var(--accent);
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.lang-sep {
+  color: #ccc;
+  font-weight: 300;
+  user-select: none;
+  margin: 0 0.02rem;
+}
+
 .wrap {
   max-width: var(--max);
   margin: 0 auto;
