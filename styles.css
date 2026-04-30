@@ -370,28 +370,6 @@ a:hover {
   margin-top: 0.2rem;
 }
 
-.skills {
-  margin: 0;
-}
-
-.skills dt {
-  display: block;
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin-top: 0.6rem;
-  color: var(--text);
-}
-
-.skills dt:first-child {
-  margin-top: 0;
-}
-
-.skills dd {
-  display: block;
-  margin: 0.2rem 0 0;
-  color: var(--muted);
-}
-
 .job {
   margin-bottom: 1.65rem;
 }
