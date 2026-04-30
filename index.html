@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Luyang Wang — Computer Vision, 3D Vision, Robotics">
+  <title>Luyang Wang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="grid" class="grid-canvas" aria-hidden="true"></canvas>
+
+  <header class="top">
+    <a class="logo" href="#">LW</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#focus">Focus</a>
+      <a href="#experience">Experience</a>
+      <a href="#scholar" class="nav-cta">Scholar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-kicker animate-in" style="--d: 0ms">Algorithm · Vision · Robotics</p>
+      <h1 class="hero-title animate-in" style="--d: 80ms">
+        <span class="gradient-text">Luyang Wang</span>
+      </h1>
+      <p class="hero-sub animate-in" style="--d: 160ms">
+        Computer vision, 3D vision &amp; embodied perception — from research to shipped products.
+      </p>
+      <div class="hero-actions animate-in" style="--d: 240ms">
+        <a class="btn btn-primary" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a class="btn btn-ghost" href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+
+    <section id="about" class="section glass">
+      <h2 class="section-title">About</h2>
+      <p class="lead">
+        I received my B.Eng. in Automation from the <strong>School of Automation</strong>, <strong>Huazhong University of Science and Technology</strong>,
+        and my M.Eng. in Automation from the <strong>Department of Automation</strong>, <strong>Tsinghua University</strong>.
+      </p>
+      <p class="lead">
+        My work sits at the intersection of <strong>computer vision</strong>, <strong>3D vision (3DV)</strong>, and <strong>robotics</strong> — including ROS-based systems that connect perception to real platforms.
+      </p>
+    </section>
+
+    <section id="focus" class="section">
+      <h2 class="section-title">Research &amp; Engineering Focus</h2>
+      <ul class="pill-list">
+        <li><span class="pill">3D Human Pose &amp; Structure</span></li>
+        <li><span class="pill">Multi-view &amp; Monocular 3D</span></li>
+        <li><span class="pill">Edge &amp; Efficient Vision</span></li>
+        <li><span class="pill">ROS / Robot Perception</span></li>
+        <li><span class="pill">Product-grade CV Pipelines</span></li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section glass">
+      <h2 class="section-title">Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-body">
+            <h3>Algorithm Expert · Alpsentek</h3>
+            <p class="timeline-meta">Present</p>
+            <p>Leading and delivering perception algorithms for next-generation intelligent systems.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-body">
+            <h3>Product Lead · Xiaoyao Series · Narwal</h3>
+            <p class="timeline-meta">Robotics &amp; smart home</p>
+            <p>Owned the Xiaoyao product line end-to-end from algorithm scope to execution, bridging research maturity with user-facing robotics experiences.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-body">
+            <h3>Senior Researcher · SenseTime</h3>
+            <p class="timeline-meta">Computer vision R&amp;D</p>
+            <p>Advanced R&amp;D on large-scale vision models, 3D understanding, and deployment-aware perception.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="scholar" class="section cta-block">
+      <div class="cta-inner glass">
+        <h2 class="section-title">Publications</h2>
+        <p class="cta-text">
+          Selected papers are listed on Google Scholar (ICCV and related venues). Follow the link for citations and full bibliography.
+        </p>
+        <a class="btn btn-primary btn-lg" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+          Open Google Scholar profile →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="y"></span> Luyang Wang · Built for GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    (function () {
+      var c = document.getElementById('grid');
+      if (!c || !c.getContext) return;
+      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduceMotion) {
+        c.style.display = 'none';
+        return;
+      }
+      var ctx = c.getContext('2d');
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var cx, cy;
+
+      function resize() {
+        c.width = Math.floor(innerWidth * dpr);
+        c.height = Math.floor(innerHeight * dpr);
+        c.style.width = innerWidth + 'px';
+        c.style.height = innerHeight + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        cx = innerWidth / 2;
+        cy = innerHeight / 2;
+      }
+
+      var t = 0;
+      function draw() {
+        t += 0.008;
+        ctx.clearRect(0, 0, innerWidth, innerHeight);
+        var spacing = 56;
+        var skew = Math.sin(t) * 0.15;
+        ctx.strokeStyle = 'rgba(120, 200, 255, 0.06)';
+        ctx.lineWidth = 1;
+        for (var x = -spacing; x < innerWidth + spacing; x += spacing) {
+          ctx.beginPath();
+          for (var y = 0; y <= innerHeight; y += 4) {
+            var nx = x + (y - cy) * skew + Math.sin(y * 0.02 + t) * 3;
+            if (y === 0) ctx.moveTo(nx, y);
+            else ctx.lineTo(nx, y);
+          }
+          ctx.stroke();
+        }
+        var pulse = 0.04 + Math.sin(t * 2) * 0.02;
+        var g = ctx.createRadialGradient(cx, cy * 0.6, 0, cx, cy, innerWidth * 0.55);
+        g.addColorStop(0, 'rgba(99, 102, 241, ' + pulse + ')');
+        g.addColorStop(0.45, 'rgba(14, 165, 233, 0.03)');
+        g.addColorStop(1, 'transparent');
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, innerWidth, innerHeight);
+        requestAnimationFrame(draw);
+      }
+
+      resize();
+      window.addEventListener('resize', resize);
+      requestAnimationFrame(draw);
+    })();
+  </script>
+</body>
+</html>
