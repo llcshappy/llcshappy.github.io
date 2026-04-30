@@ -3,167 +3,141 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Luyang Wang — Computer Vision, 3D Vision, Robotics">
+  <meta name="description" content="Luyang Wang — Computer vision, 3D perception, and embedded ML">
   <title>Luyang Wang</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <canvas id="grid" class="grid-canvas" aria-hidden="true"></canvas>
-
-  <header class="top">
-    <a class="logo" href="#">LW</a>
-    <nav class="nav">
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
       <a href="#about">About</a>
-      <a href="#focus">Focus</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#scholar" class="nav-cta">Scholar</a>
+      <a href="#publications">Publications</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="hero-kicker animate-in" style="--d: 0ms">Algorithm · Vision · Robotics</p>
-      <h1 class="hero-title animate-in" style="--d: 80ms">
-        <span class="gradient-text">Luyang Wang</span>
-      </h1>
-      <p class="hero-sub animate-in" style="--d: 160ms">
-        Computer vision, 3D vision &amp; embodied perception — from research to shipped products.
-      </p>
-      <div class="hero-actions animate-in" style="--d: 240ms">
-        <a class="btn btn-primary" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        <a class="btn btn-ghost" href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <main class="wrap">
+    <section id="about" class="intro">
+      <img class="portrait" src="assets/photo.png" width="200" height="200" alt="Portrait of Luyang Wang">
+      <div class="intro-text">
+        <h1>Luyang Wang</h1>
+        <p class="tagline">Computer vision · 3D perception · Embedded &amp; robotics ML</p>
+        <p class="bio">
+          I am a machine learning engineer at <strong>Narwal</strong>, leading perception-related modules for the flagship Xiaoyao vacuum line.
+          Earlier I worked on ISP and imaging at <strong>SenseTime</strong> (shipping on Samsung and Oppo platforms) and on retrieval and AutoLabel at <strong>GDDi</strong>.
+          My background is in automation from <strong>Tsinghua</strong> (M.Eng.) and <strong>HUST</strong> (B.Eng.).
+        </p>
+        <ul class="contacts">
+          <li><a href="mailto:llcshappy@gmail.com">llcshappy@gmail.com</a></li>
+          <li><a href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+          <li><a href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
       </div>
     </section>
 
-    <section id="about" class="section glass">
-      <h2 class="section-title">About</h2>
-      <p class="lead">
-        I received my B.Eng. in Automation from the <strong>School of Automation</strong>, <strong>Huazhong University of Science and Technology</strong>,
-        and my M.Eng. in Automation from the <strong>Department of Automation</strong>, <strong>Tsinghua University</strong>.
-      </p>
-      <p class="lead">
-        My work sits at the intersection of <strong>computer vision</strong>, <strong>3D vision (3DV)</strong>, and <strong>robotics</strong> — including ROS-based systems that connect perception to real platforms.
-      </p>
-    </section>
-
-    <section id="focus" class="section">
-      <h2 class="section-title">Research &amp; Engineering Focus</h2>
-      <ul class="pill-list">
-        <li><span class="pill">3D Human Pose &amp; Structure</span></li>
-        <li><span class="pill">Multi-view &amp; Monocular 3D</span></li>
-        <li><span class="pill">Edge &amp; Efficient Vision</span></li>
-        <li><span class="pill">ROS / Robot Perception</span></li>
-        <li><span class="pill">Product-grade CV Pipelines</span></li>
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="flat-list">
+        <li><span class="degree">M.Eng., Automation</span> — Tsinghua University <span class="dates">Sep 2016 – Jun 2019</span></li>
+        <li><span class="degree">B.Eng., Automation</span> — Huazhong University of Science and Technology <span class="dates">Sep 2011 – Jun 2015</span></li>
       </ul>
     </section>
 
-    <section id="experience" class="section glass">
-      <h2 class="section-title">Experience</h2>
-      <ol class="timeline">
-        <li class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-body">
-            <h3>Algorithm Expert · Alpsentek</h3>
-            <p class="timeline-meta">Present</p>
-            <p>Leading and delivering perception algorithms for next-generation intelligent systems.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-body">
-            <h3>Product Lead · Xiaoyao Series · Narwal</h3>
-            <p class="timeline-meta">Robotics &amp; smart home</p>
-            <p>Owned the Xiaoyao product line end-to-end from algorithm scope to execution, bridging research maturity with user-facing robotics experiences.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-body">
-            <h3>Senior Researcher · SenseTime</h3>
-            <p class="timeline-meta">Computer vision R&amp;D</p>
-            <p>Advanced R&amp;D on large-scale vision models, 3D understanding, and deployment-aware perception.</p>
-          </div>
-        </li>
-      </ol>
+    <section id="skills">
+      <h2>Technical skills</h2>
+      <dl class="skills">
+        <dt>Computer vision</dt>
+        <dd>Stereo matching, semantic segmentation, retrieval, quantization &amp; compression, open-vocabulary detection, RAW/ISP pipelines.</dd>
+        <dt>Languages &amp; frameworks</dt>
+        <dd>Python, C/C++, MATLAB · PyTorch, TensorFlow, ONNX Runtime, OpenMMLab ecosystem.</dd>
+        <dt>Edge deployment</dt>
+        <dd>Horizon X5M, Allwinner MR536 — PTQ, latency optimization, accuracy alignment.</dd>
+        <dt>Tooling</dt>
+        <dd>Linux, Git, Docker, SQL, Streamlit, Gradio.</dd>
+      </dl>
     </section>
 
-    <section id="scholar" class="section cta-block">
-      <div class="cta-inner glass">
-        <h2 class="section-title">Publications</h2>
-        <p class="cta-text">
-          Selected papers are listed on Google Scholar (ICCV and related venues). Follow the link for citations and full bibliography.
-        </p>
-        <a class="btn btn-primary btn-lg" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-          Open Google Scholar profile →
-        </a>
-      </div>
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <header>
+          <h3>Narwal · Machine Learning Engineer</h3>
+          <time datetime="2023-08">Aug 2023</time><span class="sep">–</span><span>Present</span>
+        </header>
+        <ul>
+          <li><strong>ML lead (Xiaoyao 002).</strong> Own end-to-end ML for the flagship line: data acquisition design, model architecture iteration (large pre-labeling segmentation models, onboard segmentation), engineering issues (e.g. carpet cliff false triggers), testing, and cross-team integration.</li>
+          <li><strong>Data-loop platform.</strong> Pipelines with DINO, Mask2Former, and Glee for filtering, labeling, and cleaning at scale; substantial reduction in manual labeling cost annually; BI dashboards for benchmarks and data distribution.</li>
+          <li><strong>On-robot deployment.</strong> PTQ and acceleration for segmentation, detection, stereo depth, and retrieval; stereo depth latency reduced from 160&nbsp;ms → 80&nbsp;ms on Horizon X5M and 160&nbsp;ms → 66&nbsp;ms on Allwinner MR536; binocular setups maintain depth error below ~5&nbsp;mm.</li>
+          <li><strong>Exploratory work.</strong> YOLOE-style open-vocabulary detection on X5M (~100&nbsp;ms demo); lightweight convolutional BEV occupancy designs for embedded compute.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header>
+          <h3>GDDi · Senior Algorithm Engineer</h3>
+          <time datetime="2022-11">Nov 2022</time><span class="sep">–</span><time datetime="2023-08">Aug 2023</time>
+        </header>
+        <ul>
+          <li>General-purpose, chip-friendly image retrieval serving diverse customer scenarios (wildlife ID, office scenes, similarity search) across NVIDIA, Cambricon, Bitmain, and similar platforms.</li>
+          <li>AutoLabel tooling built on large models with task-specific finetuning; roughly 50% faster labeling on major internal datasets.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header>
+          <h3>SenseTime · Senior Algorithm Researcher</h3>
+          <time datetime="2019-04">Apr 2019</time><span class="sep">–</span><time datetime="2022-11">Nov 2022</time>
+        </header>
+        <ul>
+          <li><strong>Sony 2×2 OCL tuning:</strong> ISP-style pipeline design for artifacts (purple fringing, false color, PD/SD); exceeded Sony reference quality and passed customer acceptance; shipped on Samsung Galaxy S24.</li>
+          <li><strong>Oppo RawSR SDK:</strong> RAW demosaic outperforming Qualcomm ISP baselines on challenging edges and singularities.</li>
+          <li><strong>Sony IMX777:</strong> First mass-produced &gt;100&nbsp;MP RGB sensor program; addressed OuterSD, pattern noise, and false color through iterative tuning.</li>
+          <li><strong>AiToF SDK:</strong> Learning-based enhancement for iToF depth (noise, multipath, completion) with compressed models for real-time mobile inference.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header>
+          <h3>SenseTime · Research Intern</h3>
+          <time datetime="2017-06">Jun 2017</time><span class="sep">–</span><time datetime="2018-09">Sep 2018</time>
+        </header>
+        <ul>
+          <li>Monocular 3D human pose in the wild: Unity-based synthetic data, stereo-assisted pseudo-3D labels, and robust real-scene generalization; dataset and code released openly.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="publications">
+      <h2>Publications &amp; recognition</h2>
+      <ul class="pubs">
+        <li>L. Wang, Y. Chen, Z. Guo, K. Qian, M. Lin, H. Li, J. S. Ren. <em>Generalizing monocular 3D human pose estimation in the wild.</em> ICCV Workshops, 2019.</li>
+        <li>L. Wang, Y. Shen, H. Liu, Z. Guo. <em>An accurate and efficient multi-category edge detection method.</em> Cognitive Systems Research, 2019.</li>
+        <li>R. Tang, L. Wang, Z. Guo. <em>A multi-task neural network for action recognition with 3D key-points.</em> ICPR, 2021.</li>
+        <li>Y. Chen, J. Ren, X. Cheng, K. Qian, L. Wang, J. Gu. <em>Very power efficient neural time-of-flight.</em> WACV, 2020.</li>
+      </ul>
+      <ul class="extras">
+        <li>Seven granted Chinese patents.</li>
+        <li>Contributor to AIIA Model/MLOps capability assessment standards.</li>
+        <li>Narwal “Efficient Platform Construction” award (2024); consecutive top performance ratings.</li>
+        <li>Demo support for product launches, including CES&nbsp;2024 and AWE&nbsp;2025 robotics perception showcases.</li>
+        <li>Open-source resources: <a href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer">github.com/llcshappy</a></li>
+      </ul>
+      <p class="scholar-link"><a class="btn-scholar" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Full list on Google Scholar</a></p>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="y"></span> Luyang Wang · Built for GitHub Pages</p>
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Luyang Wang</p>
   </footer>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
-
-    (function () {
-      var c = document.getElementById('grid');
-      if (!c || !c.getContext) return;
-      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (reduceMotion) {
-        c.style.display = 'none';
-        return;
-      }
-      var ctx = c.getContext('2d');
-      var dpr = Math.min(window.devicePixelRatio || 1, 2);
-      var cx, cy;
-
-      function resize() {
-        c.width = Math.floor(innerWidth * dpr);
-        c.height = Math.floor(innerHeight * dpr);
-        c.style.width = innerWidth + 'px';
-        c.style.height = innerHeight + 'px';
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        cx = innerWidth / 2;
-        cy = innerHeight / 2;
-      }
-
-      var t = 0;
-      function draw() {
-        t += 0.008;
-        ctx.clearRect(0, 0, innerWidth, innerHeight);
-        var spacing = 56;
-        var skew = Math.sin(t) * 0.15;
-        ctx.strokeStyle = 'rgba(120, 200, 255, 0.06)';
-        ctx.lineWidth = 1;
-        for (var x = -spacing; x < innerWidth + spacing; x += spacing) {
-          ctx.beginPath();
-          for (var y = 0; y <= innerHeight; y += 4) {
-            var nx = x + (y - cy) * skew + Math.sin(y * 0.02 + t) * 3;
-            if (y === 0) ctx.moveTo(nx, y);
-            else ctx.lineTo(nx, y);
-          }
-          ctx.stroke();
-        }
-        var pulse = 0.04 + Math.sin(t * 2) * 0.02;
-        var g = ctx.createRadialGradient(cx, cy * 0.6, 0, cx, cy, innerWidth * 0.55);
-        g.addColorStop(0, 'rgba(99, 102, 241, ' + pulse + ')');
-        g.addColorStop(0.45, 'rgba(14, 165, 233, 0.03)');
-        g.addColorStop(1, 'transparent');
-        ctx.fillStyle = g;
-        ctx.fillRect(0, 0, innerWidth, innerHeight);
-        requestAnimationFrame(draw);
-      }
-
-      resize();
-      window.addEventListener('resize', resize);
-      requestAnimationFrame(draw);
-    })();
   </script>
 </body>
 </html>
