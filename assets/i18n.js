@@ -16,7 +16,7 @@
       "hero.github": "GitHub",
       "hero.email": "Email via Gmail",
       "hero.name": "Luyang Wang",
-      "footer.name": "Luyang Wang",
+      "footer.rights": "All content on this site is copyrighted by the author.",
       "title.index": "Luyang Wang",
       "title.crafts": "Crafts · Luyang Wang",
       "title.notes": "Notes · Luyang Wang",
@@ -56,7 +56,6 @@
       "pub.alt.edge": "Thumbnail: edge detection",
       "pub.alt.action": "Thumbnail: action recognition",
       "pub.alt.tof": "Thumbnail: neural time-of-flight",
-      "pub.scholar": "Full list on Google Scholar",
       "crafts.h1": "Crafts / 手工",
       "crafts.p1":
         "这里会陆续放一些小手工、模型或杂项创作。页面结构已经搭好：之后每个作品可以用一张图 + 一段说明，或按时间线排列。",
@@ -87,7 +86,7 @@
       "hero.github": "GitHub",
       "hero.email": "通过 Gmail 发邮件",
       "hero.name": "王鲁阳",
-      "footer.name": "王鲁阳",
+      "footer.rights": "本站内容版权归作者所有",
       "title.index": "王鲁阳",
       "title.crafts": "手工 · 王鲁阳",
       "title.notes": "随记 · 王鲁阳",
@@ -126,7 +125,6 @@
       "pub.alt.edge": "缩略图：边缘检测",
       "pub.alt.action": "缩略图：行为识别",
       "pub.alt.tof": "缩略图：神经 ToF",
-      "pub.scholar": "谷歌学术完整列表",
       "crafts.h1": "手工 / Crafts",
       "crafts.p1":
         "这里会陆续放一些小手工、模型或杂项创作。页面结构已经搭好：之后每个作品可以用一张图 + 一段说明，或按时间线排列。",
