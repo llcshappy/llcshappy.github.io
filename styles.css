@@ -220,18 +220,59 @@ a:hover {
   min-width: 0;
 }
 
-.hero-text h1 {
+/* Hero name: EN = Latin ∥ 中文行书；ZH = 仅中文 */
+.hero-name {
+  margin: 0 0 0.45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.18rem;
+}
+
+.hero-name__primary,
+.hero-name__secondary {
+  display: block;
+  max-width: 100%;
+}
+
+html:lang(en) .hero-name {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.85rem;
+}
+
+.hero-text .hero-name__primary {
   font-family: "Source Serif 4", Georgia, serif;
   font-weight: 700;
   font-size: clamp(1.65rem, 4vw, 2.1rem);
   letter-spacing: -0.02em;
-  margin: 0 0 0.4rem;
   color: var(--accent);
-  line-height: 1.2;
+  line-height: 1.18;
 }
 
-/* Chinese hero name: 钟齐志莽行书 → Google Fonts "Zhi Mang Xing" */
-html:lang(zh-Hans) .hero-text h1 {
+.hero-text .hero-name__secondary {
+  font-weight: 400;
+  font-size: clamp(1.38rem, 3.5vw, 1.95rem);
+  letter-spacing: 0.1em;
+  line-height: 1.15;
+  color: var(--muted);
+}
+
+/* 英文页中文名：与英文名同色 */
+html:lang(en) .hero-name__secondary {
+  font-family: "Zhi Mang Xing", "STKaiti", "KaiTi", cursive, "Noto Sans SC", sans-serif;
+  font-size: clamp(1.85rem, 4.55vw, 2.48rem);
+  letter-spacing: 0.11em;
+  line-height: 1.12;
+  color: var(--accent);
+}
+
+html:lang(zh-Hans) .hero-name__secondary {
+  display: none;
+}
+
+html:lang(zh-Hans) .hero-name__primary {
   font-family: "Zhi Mang Xing", "STKaiti", "KaiTi", cursive, var(--font-zh-sans);
   font-weight: 400;
   font-size: clamp(2.05rem, 5.2vw, 2.75rem);
@@ -698,6 +739,14 @@ html:lang(zh-Hans) .hero-text h1 {
   }
 
   .hero-links {
+    justify-content: center;
+  }
+
+  .hero .hero-name {
+    align-items: center;
+  }
+
+  html:lang(en) .hero .hero-name {
     justify-content: center;
   }
 

@@ -15,7 +15,8 @@
       "hero.scholar": "Google Scholar",
       "hero.github": "GitHub",
       "hero.email": "Email via Gmail",
-      "hero.name": "Luyang Wang",
+      "hero.namePrimary": "Luyang Wang",
+      "hero.nameSecondary": "王鲁阳",
       "footer.rights": "All content on this site is copyrighted by the author.",
       "title.index": "Luyang Wang",
       "title.crafts": "Crafts · Luyang Wang",
@@ -94,7 +95,8 @@
       "hero.scholar": "谷歌学术",
       "hero.github": "GitHub",
       "hero.email": "通过 Gmail 发邮件",
-      "hero.name": "王鲁阳",
+      "hero.namePrimary": "王鲁阳",
+      "hero.nameSecondary": "",
       "footer.rights": "本站内容版权归作者所有",
       "title.index": "王鲁阳",
       "title.crafts": "手工 · 王鲁阳",
@@ -191,6 +193,21 @@
       if (el.getAttribute("data-i18n-html") === "true") el.innerHTML = dict[key];
       else el.textContent = dict[key];
     });
+
+    var heroPrimary = document.querySelector(".hero-name__primary");
+    var heroSecondary = document.querySelector(".hero-name__secondary");
+    if (heroPrimary) {
+      heroPrimary.setAttribute("lang", lang === "en" ? "en" : "zh-Hans");
+    }
+    if (heroSecondary) {
+      if (lang === "zh") {
+        heroSecondary.setAttribute("aria-hidden", "true");
+        heroSecondary.removeAttribute("lang");
+      } else {
+        heroSecondary.removeAttribute("aria-hidden");
+        heroSecondary.setAttribute("lang", "zh-Hans");
+      }
+    }
 
     document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
       var key = el.getAttribute("data-i18n-alt");
