@@ -403,25 +403,30 @@ a:hover {
 
 .job header {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.35rem 0.85rem;
-  margin-bottom: 0.45rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin-bottom: 0.55rem;
 }
 
 .job h3 {
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
-  flex: 1 1 auto;
-  min-width: 10rem;
+  flex: none;
+  min-width: 0;
+  width: 100%;
   color: var(--text);
 }
 
 .job-dates {
   font-size: 0.875rem;
   color: var(--muted);
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0.15rem 0 0.15rem 0.65rem;
+  border-left: 3px solid rgba(11, 87, 208, 0.32);
 }
 
 .sep {

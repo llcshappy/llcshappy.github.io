@@ -20,14 +20,14 @@
       "title.index": "Luyang Wang",
       "title.crafts": "Crafts · Luyang Wang",
       "title.notes": "Notes · Luyang Wang",
-      "meta.index": "Luyang Wang — 3DV, semantic vision, IQ/ISP, modeling, and quantization",
+      "meta.index": "Luyang Wang — 3D perception, spatial intelligence, VLM, edge AI",
       "meta.crafts": "Luyang Wang — Crafts and handmade work",
       "meta.notes": "Luyang Wang — Notes, sharing, and learning log",
       "portrait.alt": "Portrait of Luyang Wang",
-      "role.line": "3DV · Semantic · IQ · Model · Quantization",
+      "role.line": "3D Perception · Spatial Intelligence · VLM · Edge AI",
       "section.biography": "Biography",
       bio:
-        "<p>Hi, welcome to my blog! 👋</p><p>I'm an <strong>Algorithm Expert and Team Lead</strong> currently working at <strong>Alpsentek</strong>. Leading a talented team of 10+ engineers, my mission is to build ultra-low-power perception algorithms and applications powered by <strong>Alpsentek</strong>'s in-house EVS (Event-based Vision Sensor) cameras.</p><p>We tackle hardcore R&amp;D spanning low-level sensor algorithms, structured light, high-speed tracking, optical flow, and depth estimation, empowering cutting-edge scenarios across UAVs, autonomous driving, and security systems.</p><p>My journey in computer vision has taken me through various facets of the industry. Before <strong>Alpsentek</strong>, I was the <strong>Perception Lead</strong> for the Xiaoyao 002 product line at <strong>Narwal</strong>. I drove the development of semantic segmentation, stereo depth, and data retrieval, alongside model architecture optimization and on-device deployment. I also bridged the gap for cross-functional, system-level collaboration among the hardware, perception, and planning/control teams. Earlier in my career, I honed my skills at <strong>SenseTime</strong>, diving deep into Remosaic and mobile IQ/ISP algorithms.</p><p>Academically, I hold a <strong>B.Eng. in Automation</strong> from <strong>HUST</strong> and an <strong>M.Eng.</strong> from the <strong>Institute of Pattern Recognition (Department of Automation)</strong> at <strong>Tsinghua University</strong>.</p><p>Here on my blog, I share my thoughts and experiences on machine vision, frontier sensor tech, and the practical engineering challenges of bringing AI to life.</p>",
+        "<p>Hi, welcome to my blog! 👋</p><p>I'm an <strong>Algorithm Expert and Team Lead</strong> currently at <strong>Alpsentek</strong>, where I focus on building ultra-low-power perception algorithms powered by in-house <strong>EVS</strong> (Event-based Vision Sensor) cameras. My team and I tackle hardcore R&amp;D—spanning structured light, optical flow, and depth estimation—to empower cutting-edge applications in UAVs, autonomous driving, and security systems.</p><p>Prior to <strong>Alpsentek</strong>, I served as the <strong>Perception Lead</strong> at <strong>Narwal</strong>, driving the development and on-device deployment of semantic segmentation and stereo depth algorithms for consumer robotics. Earlier in my career, I honed my computer vision skills at <strong>SenseTime</strong>, diving deep into <strong>Remosaic</strong> and mobile <strong>ISP</strong> algorithms.</p><p>Academically, I hold an <strong>M.Eng.</strong> from the <strong>Institute of Pattern Recognition (Department of Automation)</strong> at <strong>Tsinghua University</strong>, and a <strong>B.Eng.</strong> in Automation from <strong>HUST</strong>.</p><p>Here on my blog, I share my thoughts, research notes, and experiences on machine vision, frontier sensor tech, and the practical engineering challenges of bringing AI to life.</p>",
       "section.education": "Education",
       "edu.tsinghua.school": "Tsinghua University",
       "edu.tsinghua.degree": "M.Eng., Automation (Institute of Pattern Recognition)",
@@ -38,19 +38,28 @@
       "job.alps.dates": "Apr 2026 – Present",
       "job.alps.title": "Alpsentek · Algorithm Expert",
       "job.alps.li1":
-        "Leading the Low Power Vision program at Alpsentek, spanning in-sensor algorithms, UAV perception, and autonomous driving. EVS-based algorithms reach milliwatt-class power consumption, while EVS–RGB fusion further improves perception performance.",
+        "<strong>Low Power Vision:</strong> Leading the perception program spanning in-sensor algorithms, UAV, and autonomous driving.",
+      "job.alps.li2":
+        "<strong>Performance &amp; Efficiency:</strong> Developing EVS-based algorithms that achieve milliwatt-class power consumption, while pushing performance boundaries via EVS–RGB fusion.",
       "job.narwal.dates": "Aug 2023 – Apr 2026",
-      "job.narwal.title": "Narwal · Machine Learning Engineer",
+      "job.narwal.title": "Narwal · Machine Learning Engineer (Perception PL)",
       "job.narwal.li1":
-        "Perception / algorithm PL for the Narwal Xiaoyao 002 robot vacuum: led stereo matching with quantization-accelerated deployment, achieving 5 mm obstacle-avoidance accuracy—among the best in the industry. The role also covered perception platform bring-up, data retrieval, and collaboration across upstream and downstream teams.",
+        "<strong>On-Device Deployment:</strong> Led stereo matching development with quantization acceleration for the flagship robot vacuum line.",
+      "job.narwal.li2":
+        "<strong>Industry-Leading Accuracy:</strong> Achieved a <strong>5 mm</strong> obstacle-avoidance accuracy.",
+      "job.narwal.li3":
+        "<strong>Infrastructure:</strong> Spearheaded the perception platform bring-up and large-scale data retrieval pipelines.",
       "job.stsr.dates": "Apr 2019 – Nov 2022",
       "job.stsr.title": "SenseTime · Senior Algorithm Researcher",
-      "job.stsr.li1": "<strong>Remosaic</strong> / RAW demosaic and related pipeline modules for flagship mobile sensors.",
-      "job.stsr.li2": "Customer-facing <strong>image quality (IQ)</strong> tuning and artifact control for ISP-style stacks.",
+      "job.stsr.li1":
+        "Developed Remosaic / RAW demosaic and related computational photography pipelines for flagship mobile sensors.",
+      "job.stsr.li2":
+        "Led image quality (IQ) tuning and artifact control for commercial ISP-style stacks.",
       "job.stin.dates": "Jun 2017 – Sep 2018",
       "job.stin.title": "SenseTime · Research Intern",
       "job.stin.li1":
-        "Monocular 3D human pose in the wild (ICCVW); synthetic data, pseudo-3D labels, and open release.",
+        "<strong>Monocular 3D Human Pose:</strong> Built simulation environments and data-generation pipelines.",
+      "job.stin.li2": "Achieved <strong>SOTA-level</strong> results on the <strong>Human3.6M</strong> benchmark.",
       "section.pubs": "Publications",
       "pub.alt.pose": "Thumbnail: monocular 3D human pose",
       "pub.alt.edge": "Thumbnail: edge detection",
@@ -90,11 +99,11 @@
       "title.index": "王鲁阳",
       "title.crafts": "手工 · 王鲁阳",
       "title.notes": "随记 · 王鲁阳",
-      "meta.index": "王鲁阳 — 三维视觉、语义、画质、模型与量化",
+      "meta.index": "王鲁阳 — 三维感知、空间智能、VLM、端侧智能",
       "meta.crafts": "王鲁阳 — 手工与小创作",
       "meta.notes": "王鲁阳 — 随记、分享与学习记录",
       "portrait.alt": "王鲁阳照片",
-      "role.line": "3DV · 语义 · 画质 · 模型 · 量化",
+      "role.line": "3D 感知 · 空间智能 · VLM · 端侧 AI",
       "section.biography": "个人简介",
       bio:
         "<p>你好，欢迎来到我的博客！👋</p><p>我现任<strong>算法专家及团队负责人</strong>，就职于<strong>锐思智芯（Alpsentek）</strong>，带领一支十余人的工程师团队。我们致力于基于公司自研的 EVS（事件相机）打造超低功耗感知算法与应用，研发领域涵盖传感器底层算法、结构光、高速追踪、光流以及深度估计，重点赋能无人机、自动驾驶及安防等前沿场景。</p><p>在此之前，我曾在<strong>云鲸（Narwal）</strong>担任逍遥002产品线的<strong>感知负责人</strong>，主导语义分割、双目深度、数据检索及模型架构优化与端侧部署，并负责感知与硬件、规控等团队的跨部门系统级协同。职业生涯早期，我曾在<strong>商汤科技</strong>深耕 Remosaic 及手机移动端的 IQ/ISP 算法。</p><p>我本科毕业于<strong>华中科技大学</strong>，<strong>自动化专业</strong>；硕士毕业于<strong>清华大学</strong>，<strong>自动化系模式识别研究所</strong>。</p><p>在这个博客里，我会不定期分享关于机器视觉、前沿传感器技术以及 AI 落地工程实践的思考与经验。</p>",
@@ -108,18 +117,26 @@
       "job.alps.dates": "2026年4月 — 至今",
       "job.alps.title": "Alpsentek · 算法专家",
       "job.alps.li1":
-        "在 Alpsentek 负责低功耗视觉（Low Power Vision）项目，涵盖 in-sensor 算法、无人机与自动驾驶相关方向。基于 EVS 的算法可实现 mW 量级功耗，并结合 EVS 与 RGB Fusion 增强感知算法性能。",
+        "<strong>低功耗视觉：</strong>负责感知方向，覆盖 in-sensor 算法、无人机与自动驾驶等场景。",
+      "job.alps.li2":
+        "<strong>性能与能效：</strong>基于 EVS 的算法达到毫瓦级功耗，并通过 EVS–RGB 融合拓展性能上限。",
       "job.narwal.dates": "2023年8月 — 2026年4月",
-      "job.narwal.title": "云鲸 Narwal · 机器学习工程师",
+      "job.narwal.title": "云鲸 Narwal · 机器学习工程师（感知 PL）",
       "job.narwal.li1":
-        "担任云鲸逍遥002扫地机算法PL，开发 Stereo Matching 并完成量化加速，使扫地机避障精度达到 5 mm，行业领先。工作另涵盖平台搭建、数据检索与上下游协作。",
+        "<strong>端侧部署：</strong>面向旗舰扫地机产品线，主导双目立体匹配与量化加速落地。",
+      "job.narwal.li2":
+        "<strong>精度指标：</strong>避障精度达到 <strong>5 mm</strong>，达到业界领先水平。",
+      "job.narwal.li3":
+        "<strong>基础设施：</strong>主导感知平台搭建与大规模数据检索管线。",
       "job.stsr.dates": "2019年4月 — 2022年11月",
       "job.stsr.title": "商汤 SenseTime · 高级算法研究员",
-      "job.stsr.li1": "旗舰移动传感器上的 <strong>Remosaic</strong> / RAW 去马赛克及相关管线模块。",
-      "job.stsr.li2": "面向客户的 <strong>画质（IQ）</strong> 调参与 ISP 类伪影控制。",
+      "job.stsr.li1": "为旗舰移动传感器开发 Remosaic / RAW 去马赛克及相关计算摄影管线。",
+      "job.stsr.li2": "负责商业级 ISP 方案的画质（IQ）调参与伪影控制。",
       "job.stin.dates": "2017年6月 — 2018年9月",
       "job.stin.title": "商汤 SenseTime · 研究实习生",
-      "job.stin.li1": "野外单目三维人体姿态（ICCVW）；合成数据、伪三维标签与开源发布。",
+      "job.stin.li1":
+        "<strong>单目三维人体姿态：</strong>搭建仿真环境并完成数据生成流水线。",
+      "job.stin.li2": "在 <strong>Human3.6M</strong> 基准上取得 <strong>SOTA</strong> 水平表现。",
       "section.pubs": "发表论文",
       "pub.alt.pose": "缩略图：单目三维人体姿态",
       "pub.alt.edge": "缩略图：边缘检测",
