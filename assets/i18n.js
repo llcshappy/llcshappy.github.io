@@ -42,7 +42,7 @@
       "job.narwal.dates": "Aug 2023 – Apr 2026",
       "job.narwal.title": "Narwal · Machine Learning Engineer",
       "job.narwal.li1":
-        "Perception PL for the <strong>Xiaoyao</strong> line: <strong>semantic segmentation</strong>, <strong>binocular stereo depth</strong>, and coordination across data, models, onboard deployment, and partner teams.",
+        "Perception / algorithm PL for the Narwal Xiaoyao 002 robot vacuum: led stereo matching with quantization-accelerated deployment, achieving 5 mm obstacle-avoidance accuracy—among the best in the industry. The role also covered perception platform bring-up, data retrieval, and collaboration across upstream and downstream teams.",
       "job.stsr.dates": "Apr 2019 – Nov 2022",
       "job.stsr.title": "SenseTime · Senior Algorithm Researcher",
       "job.stsr.li1": "<strong>Remosaic</strong> / RAW demosaic and related pipeline modules for flagship mobile sensors.",
@@ -113,7 +113,7 @@
       "job.narwal.dates": "2023年8月 — 2026年4月",
       "job.narwal.title": "云鲸 Narwal · 机器学习工程师",
       "job.narwal.li1":
-        "<strong>逍遥</strong> 产品线感知 PL：<strong>语义分割</strong>、<strong>双目立体深度</strong>，以及数据、模型、端侧部署与跨团队协同。",
+        "担任云鲸逍遥002扫地机算法PL，开发 Stereo Matching 并完成量化加速，使扫地机避障精度达到 5 mm，行业领先。工作另涵盖平台搭建、数据检索与上下游协作。",
       "job.stsr.dates": "2019年4月 — 2022年11月",
       "job.stsr.title": "商汤 SenseTime · 高级算法研究员",
       "job.stsr.li1": "旗舰移动传感器上的 <strong>Remosaic</strong> / RAW 去马赛克及相关管线模块。",
