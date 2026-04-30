@@ -214,7 +214,7 @@
     var meta = document.querySelector('meta[name="description"]');
     if (meta && dict[metaKey]) meta.setAttribute("content", dict[metaKey]);
 
-    var tray = document.querySelector(".lang-switch");
+    var tray = document.querySelector(".lang-inline");
     if (tray && dict["aria.langPick"]) tray.setAttribute("aria-label", dict["aria.langPick"]);
   }
 

@@ -73,6 +73,7 @@ a:hover {
 .nav {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.65rem 1.15rem;
   justify-content: flex-end;
 }
@@ -93,49 +94,48 @@ a:hover {
   font-weight: 600;
 }
 
-.header-tray {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0.65rem 1.25rem;
-}
-
-.lang-switch {
+.lang-inline {
   display: inline-flex;
-  align-items: center;
-  gap: 0.1rem;
-  flex-shrink: 0;
+  align-items: baseline;
+  margin-left: 0.1rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--header-border);
 }
 
-.lang-btn {
+.lang-link {
   border: none;
-  background: transparent;
+  background: none;
+  padding: 0;
+  margin: 0;
   font: inherit;
-  font-size: 0.82rem;
-  font-weight: 600;
-  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: var(--muted);
-  padding: 0.28rem 0.45rem;
-  border-radius: 4px;
-  line-height: 1.2;
+  cursor: pointer;
+  line-height: inherit;
 }
 
-.lang-btn:hover {
+.lang-link:hover {
   color: var(--accent);
-  background: rgba(0, 0, 0, 0.05);
 }
 
-.lang-btn.is-active {
+.lang-link.is-active {
   color: var(--accent);
-  background: rgba(0, 0, 0, 0.06);
+  font-weight: 600;
 }
 
-.lang-sep {
-  color: #ccc;
-  font-weight: 300;
+.lang-link:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.lang-inline .lang-sep {
+  color: #c5c5c5;
+  font-weight: 400;
+  margin: 0 0.12rem;
   user-select: none;
-  margin: 0 0.02rem;
+  font-size: 0.9rem;
 }
 
 .wrap {
