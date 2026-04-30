@@ -45,7 +45,6 @@ html:lang(zh-Hans) body {
   line-height: 1.75;
 }
 
-html:lang(zh-Hans) .hero-text h1,
 html:lang(zh-Hans) .section-title,
 html:lang(zh-Hans) .page-title,
 html:lang(zh-Hans) .subsection-title,
@@ -53,10 +52,6 @@ html:lang(zh-Hans) .note-title,
 html:lang(zh-Hans) .pub-title {
   font-family: var(--font-zh-serif);
   letter-spacing: 0;
-}
-
-html:lang(zh-Hans) .hero-text h1 {
-  line-height: 1.28;
 }
 
 html:lang(zh-Hans) .role-line,
@@ -233,6 +228,15 @@ a:hover {
   margin: 0 0 0.4rem;
   color: var(--accent);
   line-height: 1.2;
+}
+
+/* Chinese hero name: 钟齐志莽行书 → Google Fonts "Zhi Mang Xing" */
+html:lang(zh-Hans) .hero-text h1 {
+  font-family: "Zhi Mang Xing", "STKaiti", "KaiTi", cursive, var(--font-zh-sans);
+  font-weight: 400;
+  font-size: clamp(2.05rem, 5.2vw, 2.75rem);
+  letter-spacing: 0.06em;
+  line-height: 1.12;
 }
 
 .role-line {
