@@ -28,7 +28,8 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   color: var(--text);
-  background: var(--page);
+  background: var(--bg);
+  overflow-x: hidden;
 }
 
 a {
@@ -98,9 +99,6 @@ a:hover {
   padding: 2rem 1.25rem 3.5rem;
   background: var(--bg);
   min-height: 60vh;
-  border-left: 1px solid var(--header-border);
-  border-right: 1px solid var(--header-border);
-  border-bottom: 1px solid var(--header-border);
 }
 
 .about-block {
@@ -110,7 +108,7 @@ a:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: minmax(0, 200px) minmax(0, 1fr);
   gap: 1.75rem 2rem;
   align-items: start;
   margin-bottom: 1.75rem;
@@ -133,6 +131,10 @@ a:hover {
   height: 100%;
   object-fit: cover;
   object-position: center 22%;
+}
+
+.hero-text {
+  min-width: 0;
 }
 
 .hero-text h1 {
@@ -223,6 +225,7 @@ a:hover {
   margin: 0 0 1rem;
   max-width: 48rem;
   color: var(--text);
+  overflow-wrap: break-word;
 }
 
 .prose:last-child {
@@ -295,6 +298,7 @@ a:hover {
 }
 
 .skills dt {
+  display: block;
   font-weight: 600;
   font-size: 0.9rem;
   margin-top: 0.6rem;
@@ -306,6 +310,7 @@ a:hover {
 }
 
 .skills dd {
+  display: block;
   margin: 0.2rem 0 0;
   color: var(--muted);
 }
@@ -374,7 +379,7 @@ a:hover {
 
 .pub-row {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 160px minmax(0, 1fr);
   gap: 1rem 1.25rem;
   align-items: start;
   margin-bottom: 1.5rem;
@@ -504,6 +509,58 @@ a:hover {
   font-size: 0.8rem;
   color: var(--muted);
   text-align: center;
+  border-top: 1px solid var(--header-border);
+  background: var(--bg);
+}
+
+.note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.note-entry {
+  padding-bottom: 1.35rem;
+  margin-bottom: 1.35rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.note-entry:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.note-date {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  margin: 0 0 0.35rem;
+}
+
+.note-title {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  line-height: 1.35;
+}
+
+.note-body {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.note-body p {
+  margin: 0 0 0.65rem;
+}
+
+.note-body p:last-child {
+  margin-bottom: 0;
 }
 
 .site-footer p {
@@ -515,11 +572,6 @@ a:hover {
 }
 
 @media (max-width: 720px) {
-  .wrap {
-    border-left: none;
-    border-right: none;
-  }
-
   .hero {
     grid-template-columns: 1fr;
     justify-items: center;
