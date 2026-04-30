@@ -22,7 +22,7 @@
       "meta.crafts": "Luyang Wang — Crafts and handmade work",
       "meta.notes": "Luyang Wang — Notes, sharing, and learning log",
       "portrait.alt": "Portrait of Luyang Wang",
-      "role.line": "Algorithm Expert · Alpsentek",
+      "role.line": "3DV · Stereo matching · Semantic segmentation · Remosaic",
       affil: "EVS-based ultra-low-power sensing · algorithms & applications",
       "section.biography": "Biography",
       bio:
@@ -103,7 +103,7 @@
       "meta.crafts": "王路阳 — 手工与小创作",
       "meta.notes": "王路阳 — 随记、分享与学习记录",
       "portrait.alt": "王路阳照片",
-      "role.line": "算法专家 · Alpsentek",
+      "role.line": "三维视觉 · 立体匹配 · 语义分割 · Remosaic",
       affil: "基于 EVS 的超低功耗感知 · 算法与应用",
       "section.biography": "个人简介",
       bio:
