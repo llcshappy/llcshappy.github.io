@@ -458,6 +458,11 @@ html:lang(zh-Hans) .hero-name__primary {
   background: #f0f0f0;
 }
 
+.edu-logo--hust {
+  object-fit: contain;
+  border-radius: 50%;
+}
+
 .edu-text {
   min-width: 0;
 }
