@@ -38,7 +38,7 @@
       "job.alps.dates": "Apr 2026 – Present",
       "job.alps.title": "Alpsentek · Algorithm Expert",
       "job.alps.li1":
-        "Algorithms and product-side work based on <strong>EVS</strong> (event-based vision sensors) for <strong>ultra-low-power</strong> perception stacks.",
+        "Leading the Low Power Vision program at Alpsentek, spanning in-sensor algorithms, UAV perception, and autonomous driving. EVS-based algorithms reach milliwatt-class power consumption, while EVS–RGB fusion further improves perception performance.",
       "job.narwal.dates": "Aug 2023 – Apr 2026",
       "job.narwal.title": "Narwal · Machine Learning Engineer",
       "job.narwal.li1":
@@ -109,7 +109,7 @@
       "job.alps.dates": "2026年4月 — 至今",
       "job.alps.title": "Alpsentek · 算法专家",
       "job.alps.li1":
-        "基于 <strong>EVS</strong>（事件视觉传感器）的<strong>超低功耗</strong>感知算法与产品侧落地。",
+        "在 Alpsentek 负责低功耗视觉（Low Power Vision）项目，涵盖 in-sensor 算法、无人机与自动驾驶相关方向。基于 EVS 的算法可实现 mW 量级功耗，并结合 EVS 与 RGB Fusion 增强感知算法性能。",
       "job.narwal.dates": "2023年8月 — 2026年4月",
       "job.narwal.title": "云鲸 Narwal · 机器学习工程师",
       "job.narwal.li1":
