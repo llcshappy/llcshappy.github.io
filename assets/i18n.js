@@ -106,7 +106,7 @@
       "role.line": "3D 感知 · 空间智能 · VLM · 端侧 AI",
       "section.biography": "个人简介",
       bio:
-        "<p>你好，欢迎来到我的博客！👋</p><p>我现任<strong>算法专家及团队负责人</strong>，就职于<strong>锐思智芯（Alpsentek）</strong>，带领一支十余人的工程师团队。我们致力于基于公司自研的 EVS（事件相机）打造超低功耗感知算法与应用，研发领域涵盖传感器底层算法、结构光、高速追踪、光流以及深度估计，重点赋能无人机、自动驾驶及安防等前沿场景。</p><p>在此之前，我曾在<strong>云鲸（Narwal）</strong>担任逍遥002产品线的<strong>感知负责人</strong>，主导语义分割、双目深度、数据检索及模型架构优化与端侧部署，并负责感知与硬件、规控等团队的跨部门系统级协同。职业生涯早期，我曾在<strong>商汤科技</strong>深耕 Remosaic 及手机移动端的 IQ/ISP 算法。</p><p>我本科毕业于<strong>华中科技大学</strong>，<strong>自动化专业</strong>；硕士毕业于<strong>清华大学</strong>，<strong>自动化系模式识别研究所</strong>。</p><p>在这个博客里，我会不定期分享关于机器视觉、前沿传感器技术以及 AI 落地工程实践的思考与经验。</p>",
+        "<p>你好，欢迎来到我的博客！👋</p><p>我现任<strong>算法专家兼团队负责人</strong>，就职于<strong>锐思智芯（Alpsentek）</strong>，专注于基于自研 <strong>EVS</strong>（Event-based Vision Sensor，事件视觉传感器）相机打造超低功耗感知算法。我与团队一起做硬核研发——涵盖结构光、光流与深度估计等——为无人机、自动驾驶与安防等前沿应用提供技术支撑。</p><p>加入 Alpsentek 之前，我在<strong>云鲸（Narwal）</strong>担任<strong>感知负责人（Perception Lead）</strong>，推动语义分割与立体深度等算法在消费级机器人上的开发与端侧部署。更早阶段，我在<strong>商汤科技（SenseTime）</strong>积累计算机视觉经验，深入 <strong>Remosaic</strong> 与移动端 <strong>ISP</strong> 算法。</p><p>学术背景方面，我于<strong>清华大学</strong><strong>自动化系模式识别研究所</strong>取得<strong>工学硕士（M.Eng.）</strong>；本科毕业于<strong>华中科技大学（HUST）</strong>，获<strong>自动化专业工学学士（B.Eng.）</strong>。</p><p>在本博客中，我会分享关于机器视觉、前沿传感器技术，以及将 AI 落地为产品过程中的工程思考与实践经验。</p>",
       "section.education": "教育背景",
       "edu.tsinghua.school": "清华大学",
       "edu.tsinghua.degree": "工学硕士，自动化（模式识别研究所）",
