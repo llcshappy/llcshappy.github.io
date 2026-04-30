@@ -420,12 +420,6 @@ a:hover {
   font-weight: 600;
 }
 
-.pub-intro {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin: 0 0 1.25rem;
-}
-
 .pub-list {
   list-style: none;
   margin: 0;

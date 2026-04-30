@@ -51,7 +51,6 @@
       "job.stin.li1":
         "Monocular 3D human pose in the wild (ICCVW); synthetic data, pseudo-3D labels, and open release.",
       "section.pubs": "Publications",
-      "pub.intro": "Selected papers (thumbnails are optional).",
       "pub.alt.pose": "Thumbnail: monocular 3D human pose",
       "pub.alt.edge": "Thumbnail: edge detection",
       "pub.alt.action": "Thumbnail: action recognition",
@@ -121,7 +120,6 @@
       "job.stin.title": "商汤 SenseTime · 研究实习生",
       "job.stin.li1": "野外单目三维人体姿态（ICCVW）；合成数据、伪三维标签与开源发布。",
       "section.pubs": "发表论文",
-      "pub.intro": "部分论文选录（缩略图可选）。",
       "pub.alt.pose": "缩略图：单目三维人体姿态",
       "pub.alt.edge": "缩略图：边缘检测",
       "pub.alt.action": "缩略图：行为识别",
