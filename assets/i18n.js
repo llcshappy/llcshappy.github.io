@@ -164,17 +164,15 @@
   };
 
   function getLang() {
-    var v = localStorage.getItem(STORAGE_KEY);
-    if (SUPPORTED.indexOf(v) !== -1) return v;
+    /* English-only UI: ignore saved zh until Chinese entry is re-enabled. */
     return "en";
   }
 
   function setLang(lang) {
-    if (SUPPORTED.indexOf(lang) === -1) return;
-    localStorage.setItem(STORAGE_KEY, lang);
-    document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+    if (lang !== "en") return;
+    localStorage.setItem(STORAGE_KEY, "en");
+    document.documentElement.lang = "en";
     apply();
-    updateButtons(lang);
   }
 
   function t(lang, key) {
@@ -226,28 +224,11 @@
     var meta = document.querySelector('meta[name="description"]');
     if (meta && dict[metaKey]) meta.setAttribute("content", dict[metaKey]);
 
-    var tray = document.querySelector(".lang-inline");
-    if (tray && dict["aria.langPick"]) tray.setAttribute("aria-label", dict["aria.langPick"]);
-  }
-
-  function updateButtons(lang) {
-    document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
-      var L = btn.getAttribute("data-set-lang");
-      btn.classList.toggle("is-active", L === lang);
-      btn.setAttribute("aria-pressed", L === lang ? "true" : "false");
-    });
   }
 
   function init() {
-    var lang = getLang();
-    document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+    document.documentElement.lang = "en";
     apply();
-    updateButtons(lang);
-    document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        setLang(btn.getAttribute("data-set-lang"));
-      });
-    });
     var y = document.getElementById("y");
     if (y) y.textContent = new Date().getFullYear();
   }
