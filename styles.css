@@ -615,6 +615,31 @@ html:lang(zh-Hans) .hero-name__primary {
   line-height: 1.5;
 }
 
+.pub-meta strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.pub-links {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.pub-links a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+.pub-links__sep {
+  margin: 0 0.35rem;
+  color: var(--muted);
+}
+
 .subsection-title {
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 1rem;
