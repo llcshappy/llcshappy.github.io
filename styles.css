@@ -620,6 +620,15 @@ html:lang(zh-Hans) .hero-name__primary {
   font-weight: 600;
 }
 
+.pub-cofirst {
+  margin-left: 0.06rem;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--text);
+  vertical-align: super;
+  line-height: 0;
+}
+
 .pub-links {
   margin: 0.35rem 0 0;
   font-size: 0.82rem;
@@ -635,9 +644,8 @@ html:lang(zh-Hans) .hero-name__primary {
   text-decoration: underline;
 }
 
-.pub-links__sep {
-  margin: 0 0.35rem;
-  color: var(--muted);
+.pub-links a + a {
+  margin-left: 0.45rem;
 }
 
 .subsection-title {
@@ -657,35 +665,6 @@ html:lang(zh-Hans) .hero-name__primary {
 
 .extras li {
   margin-bottom: 0.35rem;
-}
-
-.craft-grid {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.25rem;
-}
-
-.craft-card {
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  overflow: hidden;
-  background: #fafafa;
-}
-
-.craft-thumb {
-  aspect-ratio: 4 / 3;
-  background: linear-gradient(145deg, #ececec, #f8f8f8);
-  border-bottom: 1px solid var(--rule);
-}
-
-.craft-caption {
-  margin: 0;
-  padding: 0.75rem 0.85rem;
-  font-size: 0.9rem;
-  color: var(--muted);
 }
 
 .site-footer {
