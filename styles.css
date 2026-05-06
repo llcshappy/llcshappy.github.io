@@ -608,16 +608,17 @@ html:lang(zh-Hans) .hero-name__primary {
   font-weight: 500;
 }
 
-.pub-meta {
+.pub-apa {
   margin: 0;
+  font-family: "Source Serif 4", Georgia, "Noto Serif SC", serif;
   font-size: 0.88rem;
+  line-height: 1.55;
   color: var(--muted);
-  line-height: 1.5;
 }
 
-.pub-meta strong {
-  color: var(--text);
-  font-weight: 600;
+.pub-apa em {
+  font-style: italic;
+  font-weight: 500;
 }
 
 .pub-cofirst {
