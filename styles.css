@@ -610,15 +610,20 @@ html:lang(zh-Hans) .hero-name__primary {
 
 .pub-apa {
   margin: 0;
-  font-family: "Source Serif 4", Georgia, "Noto Serif SC", serif;
+  font-family: inherit;
   font-size: 0.88rem;
   line-height: 1.55;
-  color: var(--muted);
+  font-weight: 500;
+  color: var(--text);
 }
 
 .pub-apa em {
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.pub-apa strong {
+  font-weight: 700;
 }
 
 .pub-cofirst {
