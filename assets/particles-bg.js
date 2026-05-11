@@ -17,19 +17,20 @@
           preset: "links",
           fullScreen: { enable: false, zIndex: 0 },
           background: {
-            color: { value: "#f0f2f6" },
+            color: { value: "transparent" },
           },
+          fpsLimit: 60,
           particles: {
             number: {
-              value: 72,
+              value: 58,
               density: { enable: true, width: 1100, height: 1100 },
             },
-            color: { value: "#6b7c90" },
-            opacity: { value: { min: 0.2, max: 0.5 } },
-            size: { value: { min: 1, max: 2.2 } },
+            color: { value: ["#1c3d5a", "#b08947"] },
+            opacity: { value: { min: 0.14, max: 0.34 } },
+            size: { value: { min: 1, max: 2 } },
             move: {
               enable: true,
-              speed: 0.55,
+              speed: 0.42,
               direction: "none",
               random: true,
               straight: false,
@@ -37,10 +38,10 @@
             },
             links: {
               enable: true,
-              distance: 118,
-              color: "#9eb4d4",
-              opacity: 0.38,
-              width: 0.65,
+              distance: 130,
+              color: "#9aa6b8",
+              opacity: 0.26,
+              width: 0.55,
             },
           },
           interactivity: {

@@ -143,16 +143,52 @@
     },
   };
 
+  function normalizeLang(raw) {
+    if (!raw) return null;
+    var l = String(raw).toLowerCase().slice(0, 2);
+    if (l === "zh") return "zh";
+    if (l === "en") return "en";
+    return null;
+  }
+
   function getLang() {
-    /* English-only UI: ignore saved zh until Chinese entry is re-enabled. */
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var q = normalizeLang(params.get("lang"));
+      if (q) return q;
+    } catch (e) {}
+    try {
+      var stored = localStorage.getItem(STORAGE_KEY);
+      var s = normalizeLang(stored);
+      if (s) return s;
+    } catch (e) {}
     return "en";
   }
 
   function setLang(lang) {
-    if (lang !== "en") return;
-    localStorage.setItem(STORAGE_KEY, "en");
-    document.documentElement.lang = "en";
+    if (lang !== "en" && lang !== "zh") return;
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (e) {}
+    syncLangUrl(lang);
     apply();
+  }
+
+  function syncLangUrl(lang) {
+    try {
+      var u = new URL(window.location.href);
+      if (lang === "en") u.searchParams.delete("lang");
+      else u.searchParams.set("lang", lang);
+      var qs = u.searchParams.toString();
+      history.replaceState({}, "", u.pathname + (qs ? "?" + qs : "") + u.hash);
+    } catch (e) {}
+  }
+
+  function updateLangButtons() {
+    var lang = getLang();
+    document.querySelectorAll(".lang-link[data-lang]").forEach(function (btn) {
+      btn.classList.toggle("is-active", btn.getAttribute("data-lang") === lang);
+    });
   }
 
   function t(lang, key) {
@@ -164,6 +200,8 @@
     var lang = getLang();
     var dict = STRINGS[lang];
     var page = document.body.getAttribute("data-page") || "index";
+
+    document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
 
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
@@ -204,11 +242,21 @@
     var meta = document.querySelector('meta[name="description"]');
     if (meta && dict[metaKey]) meta.setAttribute("content", dict[metaKey]);
 
+    updateLangButtons();
   }
 
   function init() {
-    document.documentElement.lang = "en";
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var fromUrl = normalizeLang(params.get("lang"));
+      if (fromUrl) localStorage.setItem(STORAGE_KEY, fromUrl);
+    } catch (e) {}
     apply();
+    document.querySelectorAll(".lang-link[data-lang]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        setLang(btn.getAttribute("data-lang"));
+      });
+    });
     var y = document.getElementById("y");
     if (y) y.textContent = new Date().getFullYear();
   }
