@@ -3,11 +3,22 @@
     return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }
 
+  function isDark() {
+    return (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    );
+  }
+
   async function start() {
     if (prefersReducedMotion()) return;
     if (typeof loadLinksPreset === "undefined" || typeof tsParticles === "undefined") return;
     var el = document.getElementById("tsparticles");
     if (!el) return;
+
+    var dark = isDark();
+    var dotColors = dark ? ["#93b4ff", "#cbb079"] : ["#1c3d5a", "#b08947"];
+    var linkColor = dark ? "#5b6675" : "#9aa6b8";
 
     try {
       await loadLinksPreset(tsParticles);
@@ -25,7 +36,7 @@
               value: 58,
               density: { enable: true, width: 1100, height: 1100 },
             },
-            color: { value: ["#1c3d5a", "#b08947"] },
+            color: { value: dotColors },
             opacity: { value: { min: 0.14, max: 0.34 } },
             size: { value: { min: 1, max: 2 } },
             move: {
@@ -39,7 +50,7 @@
             links: {
               enable: true,
               distance: 130,
-              color: "#9aa6b8",
+              color: linkColor,
               opacity: 0.26,
               width: 0.55,
             },

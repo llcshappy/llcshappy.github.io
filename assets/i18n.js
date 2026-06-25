@@ -5,6 +5,7 @@
   var STRINGS = {
     en: {
       "aria.langPick": "Choose language",
+      "aria.toTop": "Back to top",
       "nav.about": "About",
       "nav.education": "Education",
       "nav.experience": "Experience",
@@ -59,6 +60,10 @@
         "<strong>Monocular 3D Human Pose:</strong> Built simulation environments and data-generation pipelines.",
       "job.stin.li2": "Achieved <strong>SOTA-level</strong> results on the <strong>Human3.6M</strong> benchmark.",
       "section.pubs": "Publications",
+      "section.visitors": "Visitors",
+      "visitors.note": "A live map of where readers around the world drop by from.",
+      "visitors.fallback":
+        "Add your <code>ClustrMaps</code> embed id (and remove <code>hidden</code>) to display the map.",
       "pub.alt.pose": "Thumbnail: monocular 3D human pose",
       "pub.alt.edge": "Thumbnail: edge detection",
       "pub.alt.action": "Thumbnail: action recognition",
@@ -75,6 +80,7 @@
     },
     zh: {
       "aria.langPick": "选择语言",
+      "aria.toTop": "回到顶部",
       "nav.about": "简介",
       "nav.education": "教育",
       "nav.experience": "经历",
@@ -127,6 +133,10 @@
         "<strong>单目三维人体姿态：</strong>搭建仿真环境并完成数据生成流水线。",
       "job.stin.li2": "在 <strong>Human3.6M</strong> 基准上取得 <strong>SOTA</strong> 水平表现。",
       "section.pubs": "发表论文",
+      "section.visitors": "访客分布",
+      "visitors.note": "一张实时地图，记录世界各地读者来访的地区分布。",
+      "visitors.fallback":
+        "填入你的 <code>ClustrMaps</code> 嵌入 id（并移除 <code>hidden</code>）即可显示地图。",
       "pub.alt.pose": "缩略图：单目三维人体姿态",
       "pub.alt.edge": "缩略图：边缘检测",
       "pub.alt.action": "缩略图：行为识别",

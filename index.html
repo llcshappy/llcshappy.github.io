@@ -155,8 +155,8 @@
             <p class="pub-title"><em>Generalizing monocular 3D human pose estimation in the wild.</em></p>
             <p class="pub-apa">Wang, L., Chen, Y., Guo, Z., Qian, K., Lin, M., Li, H., &amp; Ren, J. S. (2019). In <em>2019 IEEE/CVF International Conference on Computer Vision Workshop (ICCVW)</em> (pp. 4024–4033).</p>
             <p class="pub-links">
-              <a href="https://arxiv.org/pdf/1904.05512.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a>
-              <a href="https://www.youtube.com/watch?v=bGpP_S5fVWc" target="_blank" rel="noopener noreferrer">[Video]</a>
+              <a class="pub-link--pdf" href="https://arxiv.org/pdf/1904.05512.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              <a class="pub-link--video" href="https://www.youtube.com/watch?v=bGpP_S5fVWc" target="_blank" rel="noopener noreferrer">Video</a>
             </p>
           </div>
         </li>
@@ -167,7 +167,7 @@
           <div class="pub-body">
             <p class="pub-title"><em>An accurate and efficient multi-category edge detection method.</em></p>
             <p class="pub-apa">Wang, L., Shen, Y., Liu, H., &amp; Guo, Z. (2019). <em>Cognitive Systems Research</em>, <em>58</em>, 160–172.</p>
-            <p class="pub-links"><a href="https://doi.org/10.1016/j.cogsys.2019.06.002" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <p class="pub-links"><a class="pub-link--pdf" href="https://doi.org/10.1016/j.cogsys.2019.06.002" target="_blank" rel="noopener noreferrer">PDF</a></p>
           </div>
         </li>
         <li class="pub-row">
@@ -177,7 +177,7 @@
           <div class="pub-body">
             <p class="pub-title"><em>A multi-task neural network for action recognition with 3D key-points.</em></p>
             <p class="pub-apa">Tang, R.<span class="pub-cofirst" aria-label="Co-first author">*</span>, Wang, L.<span class="pub-cofirst" aria-label="Co-first author">*</span>, &amp; Guo, Z. (2021). In <em>2020 25th International Conference on Pattern Recognition (ICPR)</em> (pp. 3899–3906).</p>
-            <p class="pub-links"><a href="https://doi.org/10.1109/icpr48806.2021.9412348" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <p class="pub-links"><a class="pub-link--pdf" href="https://doi.org/10.1109/icpr48806.2021.9412348" target="_blank" rel="noopener noreferrer">PDF</a></p>
           </div>
         </li>
         <li class="pub-row">
@@ -188,14 +188,35 @@
             <p class="pub-title"><em>Very power efficient neural time-of-flight.</em></p>
             <p class="pub-apa">Chen, Y., Ren, J., Cheng, X., Qian, K., Wang, L., &amp; Gu, J. (2020). In <em>2020 IEEE Winter Conference on Applications of Computer Vision (WACV)</em> (pp. 2246–2255).</p>
             <p class="pub-links">
-              <a href="https://openaccess.thecvf.com/content_WACV_2020/papers/Chen_Very_Power_Efficient_Neural_Time-of-Flight_WACV_2020_paper.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a>
-              <a href="https://www.youtube.com/watch?v=drZS0oTOltE" target="_blank" rel="noopener noreferrer">[Video]</a>
+              <a class="pub-link--pdf" href="https://openaccess.thecvf.com/content_WACV_2020/papers/Chen_Very_Power_Efficient_Neural_Time-of-Flight_WACV_2020_paper.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              <a class="pub-link--video" href="https://www.youtube.com/watch?v=drZS0oTOltE" target="_blank" rel="noopener noreferrer">Video</a>
             </p>
           </div>
         </li>
       </ul>
     </section>
+
+    <!--
+      Visitor map (ClustrMaps) — how to activate:
+      1. Register your site at https://clustrmaps.com/ and copy the embed snippet it gives you.
+      2. Replace YOUR_CLUSTRMAPS_ID below with the id (the d= value) from that snippet.
+      3. Remove the `hidden` attribute on this <section> so the block shows.
+      Note: this sends visitor location data to ClustrMaps (a third-party service).
+    -->
+    <section id="visitors" class="block visitors-block" hidden>
+      <h2 class="section-title" data-i18n="section.visitors">Visitors</h2>
+      <hr class="section-rule">
+      <p class="visitor-note" data-i18n="visitors.note">A live map of where readers around the world drop by from.</p>
+      <div class="visitor-map">
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=YOUR_CLUSTRMAPS_ID&amp;cl=ffffff&amp;w=a"></script>
+        <p class="visitor-map__fallback" data-i18n="visitors.fallback" data-i18n-html="true">Add your <code>ClustrMaps</code> embed id (and remove <code>hidden</code>) to display the map.</p>
+      </div>
+    </section>
   </main>
+
+  <button type="button" class="to-top" id="toTop" data-i18n-aria-label="aria.toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
 
   <footer class="site-footer">
     <p>© <span id="y">2026</span> · <span data-i18n="footer.rights">All content on this site is copyrighted by the author.</span></p>
@@ -205,5 +226,6 @@
   <script src="assets/particles-bg.js" defer></script>
   <script src="assets/i18n.js" defer></script>
   <script src="assets/reveal.js" defer></script>
+  <script src="assets/ui.js" defer></script>
 </body>
 </html>
