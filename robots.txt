@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://llcshappy.github.io/sitemap.xml
