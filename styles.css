@@ -93,6 +93,29 @@ html:lang(zh-Hans) .prose {
   color: var(--accent);
 }
 
+/* Skip link: first tab stop, visually hidden until focused */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  z-index: 100;
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+  transition: top 0.18s var(--ease);
+}
+
+.skip-link:focus-visible {
+  top: 0.75rem;
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
 /* tsParticles network (links preset) — behind content */
 .particles-bg {
   position: fixed;
@@ -1136,6 +1159,126 @@ html:lang(zh-Hans) .hero-name__primary {
 }
 
 /* Dark mode */
+
+/* Permalink handle on each note — quiet until the row is hovered */
+.note-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.note-permalink {
+  flex: none;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--muted-2);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.18s var(--ease), color 0.18s var(--ease);
+}
+
+.note-entry:hover .note-permalink,
+.note-permalink:focus-visible {
+  opacity: 1;
+}
+
+.note-permalink:hover {
+  color: var(--link);
+}
+
+.note-entry:target {
+  border-color: var(--accent-2);
+  box-shadow: var(--shadow-md);
+}
+
+/* RSS subscribe link */
+.feed-line {
+  margin-top: 0.9rem;
+}
+
+.feed-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.3rem 0.7rem 0.3rem 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--surface-2);
+  transition: border-color 0.18s var(--ease), background-color 0.18s var(--ease);
+}
+
+.feed-link:hover {
+  border-color: var(--rule-hover);
+  background: var(--surface-3);
+}
+
+.feed-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex: none;
+}
+
+
+/* 404 page */
+.error-block {
+  padding-top: 2rem;
+}
+
+.error-code {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(3.5rem, 12vw, 6rem);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 0.25rem;
+  color: var(--accent-2);
+  opacity: 0.28;
+  letter-spacing: -0.02em;
+}
+
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.6rem;
+}
+
+.error-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.05rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--link);
+  transition: border-color 0.18s var(--ease), background-color 0.18s var(--ease),
+    transform 0.18s var(--ease);
+}
+
+.error-btn:hover {
+  border-color: var(--rule-hover);
+  background: var(--surface-3);
+  transform: translateY(-1px);
+}
+
+.error-btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.error-btn--primary:hover {
+  background: var(--accent-2);
+  border-color: var(--accent-2);
+  color: var(--bg);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0e1116;

@@ -6,6 +6,8 @@
     en: {
       "aria.langPick": "Choose language",
       "aria.toTop": "Back to top",
+      "aria.permalink": "Permalink to this note",
+      "a11y.skip": "Skip to content",
       "nav.about": "About",
       "nav.education": "Education",
       "nav.experience": "Experience",
@@ -22,6 +24,12 @@
       "title.notes": "Notes · Luyang Wang (王鲁阳)",
       "meta.index": "Luyang Wang (王鲁阳) — Algorithm Expert in 3D perception, spatial intelligence, VLM, and edge AI. M.Eng. from Tsinghua University.",
       "meta.notes": "Luyang Wang — Notes, sharing, and learning log",
+      "title.404": "Page not found · Luyang Wang (王鲁阳)",
+      "meta.404": "This page does not exist. Head back to the homepage.",
+      "e404.title": "Page not found",
+      "e404.body": "The page you were looking for isn't here — it may have been renamed or removed.",
+      "e404.home": "Back to homepage",
+      "e404.notes": "Read the notes",
       "portrait.alt": "Portrait of Luyang Wang",
       "role.line": "3D Perception · Spatial Intelligence · VLM · Edge AI",
       "section.biography": "About me",
@@ -74,6 +82,7 @@
       "notes.p2":
         "Short posts on engineering, papers, and side thoughts. Duplicate a <code class=\"inline-code\">note-entry</code> block for each new post.",
       "notes.recent": "Recent",
+      "notes.feed": "Subscribe via RSS",
       "notes.sample.title": "Site update: layout and paper thumbnails",
       "notes.sample.body":
         "<p>Unified page background and column width; publication thumbnails match <code class=\"inline-code\">assets/pubs/</code> filenames; added this notes page.</p>",
@@ -81,6 +90,8 @@
     zh: {
       "aria.langPick": "选择语言",
       "aria.toTop": "回到顶部",
+      "aria.permalink": "本条随记的固定链接",
+      "a11y.skip": "跳到主要内容",
       "nav.about": "简介",
       "nav.education": "教育",
       "nav.experience": "经历",
@@ -97,6 +108,12 @@
       "title.notes": "随记 · 王鲁阳 (Luyang Wang)",
       "meta.index": "王鲁阳 (Luyang Wang) — 算法专家，方向为三维感知、空间智能、VLM 与端侧 AI；清华大学工学硕士。",
       "meta.notes": "王鲁阳 — 随记、分享与学习记录",
+      "title.404": "页面不存在 · 王鲁阳 (Luyang Wang)",
+      "meta.404": "该页面不存在，请返回首页。",
+      "e404.title": "页面不存在",
+      "e404.body": "你要找的页面不在这里——它可能被重命名或已移除。",
+      "e404.home": "返回首页",
+      "e404.notes": "去看看随记",
       "portrait.alt": "王鲁阳照片",
       "role.line": "3D 感知 · 空间智能 · VLM · 端侧 AI",
       "section.biography": "关于我",
@@ -147,6 +164,7 @@
       "notes.p2":
         "关于工程、论文与随笔的短文：每发一篇可复制一个 <code class=\"inline-code\">note-entry</code> 代码块添加。",
       "notes.recent": "最近",
+      "notes.feed": "RSS 订阅",
       "notes.sample.title": "站点更新：版式与论文缩略图",
       "notes.sample.body":
         "<p>统一了页面背景与主栏宽度，论文配图改为与 <code class=\"inline-code\">assets/pubs/</code> 下文件名一致；并增加本页作为随记入口。</p>",

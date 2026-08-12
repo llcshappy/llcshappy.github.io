@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Luyang Wang (王鲁阳) — Notes</title>
+    <link>https://llcshappy.github.io/notes.html</link>
+    <description>Notes, reading summaries, and engineering takeaways on machine vision, sensors, and edge AI.</description>
+    <language>en</language>
+    <managingEditor>llcshappy@gmail.com (Luyang Wang (王鲁阳))</managingEditor>
+    <webMaster>llcshappy@gmail.com (Luyang Wang (王鲁阳))</webMaster>
+    <lastBuildDate>Wed, 12 Aug 2026 03:12:11 +0000</lastBuildDate>
+    <atom:link href="https://llcshappy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <title>Luyang Wang (王鲁阳) — Notes</title>
+      <url>https://llcshappy.github.io/assets/icon/icon-192.png</url>
+      <link>https://llcshappy.github.io/notes.html</link>
+    </image>
+    <item>
+      <title>Site update: layout and paper thumbnails</title>
+      <link>https://llcshappy.github.io/notes.html#note-2026-04-30</link>
+      <guid isPermaLink="true">https://llcshappy.github.io/notes.html#note-2026-04-30</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Luyang Wang (王鲁阳)</dc:creator>
+      <description>&lt;p&gt;Unified page background and column width; publication thumbnails match &lt;code class=&quot;inline-code&quot;&gt;assets/pubs/&lt;/code&gt; filenames; added this notes page.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

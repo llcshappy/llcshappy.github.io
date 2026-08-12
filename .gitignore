@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# Local tooling / scratch
+.claude/
+_to_delete/

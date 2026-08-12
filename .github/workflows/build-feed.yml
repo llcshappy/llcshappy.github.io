@@ -1,0 +1,48 @@
+name: Rebuild feed & sitemap
+
+# Keeps feed.xml and sitemap.xml in sync with notes.html so they can never go
+# stale. Runs on every push that touches the notes; commits back only if the
+# generated files actually changed.
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "notes.html"
+      - "assets/i18n.js"
+      - "tools/build-feed.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-feed-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # Don't loop on the bot's own commit.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild feed.xml and sitemap.xml
+        run: python3 tools/build-feed.py
+
+      - name: Commit if changed
+        run: |
+          if [[ -z "$(git status --porcelain feed.xml sitemap.xml)" ]]; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed.xml sitemap.xml
+          git commit -m "chore: rebuild feed.xml and sitemap.xml"
+          git push

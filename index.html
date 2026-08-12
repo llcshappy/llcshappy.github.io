@@ -7,19 +7,35 @@
   <title>Luyang Wang (王鲁阳) — 3D Perception · Spatial Intelligence · VLM · Edge AI</title>
   <link rel="canonical" href="https://llcshappy.github.io/">
 
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+
+  <!-- Feed -->
+  <link rel="alternate" type="application/rss+xml" title="Luyang Wang — Notes" href="https://llcshappy.github.io/feed.xml">
+
   <!-- Open Graph / social cards -->
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://llcshappy.github.io/">
   <meta property="og:site_name" content="Luyang Wang">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
   <meta property="og:title" content="Luyang Wang (王鲁阳)">
   <meta property="og:description" content="Algorithm Expert in 3D perception, spatial intelligence, VLM, and edge AI. M.Eng. from Tsinghua University.">
-  <meta property="og:image" content="https://llcshappy.github.io/assets/photo.jpg">
+  <meta property="og:image" content="https://llcshappy.github.io/assets/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Luyang Wang (王鲁阳) — 3D Perception · Spatial Intelligence · VLM · Edge AI">
   <meta property="profile:first_name" content="Luyang">
   <meta property="profile:last_name" content="Wang">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Luyang Wang (王鲁阳)">
   <meta name="twitter:description" content="Algorithm Expert in 3D perception, spatial intelligence, VLM, and edge AI. M.Eng. from Tsinghua University.">
-  <meta name="twitter:image" content="https://llcshappy.github.io/assets/photo.jpg">
+  <meta name="twitter:image" content="https://llcshappy.github.io/assets/og-card.jpg">
 
   <!-- Structured data: who this person is, in both names -->
   <script type="application/ld+json">
@@ -46,10 +62,15 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+  <!-- Webfonts load non-blocking: the page renders immediately with system fallbacks.
+       Important for visitors on networks where fonts.googleapis.com is slow or blocked. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&family=Zhi+Mang+Xing&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&family=Zhi+Mang+Xing&display=swap" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&family=Zhi+Mang+Xing&display=swap"></noscript>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="index">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
   <div id="tsparticles" class="particles-bg" aria-hidden="true"></div>
   <header class="site-header">
     <div class="header-inner">
@@ -68,11 +89,11 @@
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="wrap" id="main">
     <section id="about" class="about-block">
       <div class="hero">
         <div class="portrait-frame">
-          <img class="portrait" src="assets/photo.jpg" alt="Portrait of Luyang Wang" data-i18n-alt="portrait.alt">
+          <img class="portrait" src="assets/photo.jpg" width="440" height="526" fetchpriority="high" decoding="async" alt="Portrait of Luyang Wang" data-i18n-alt="portrait.alt">
         </div>
         <div class="hero-text">
           <h1 class="hero-name">
@@ -83,17 +104,17 @@
           <ul class="hero-links hero-links--icons">
             <li>
               <a class="icon-link" href="mailto:llcshappy@gmail.com" data-i18n-aria-label="hero.email" aria-label="Email via Gmail">
-                <img class="hero-icon-img" src="assets/icon/google-icons-gmail-icons-editable-vector-illustration_981536-461.avif" alt="">
+                <img class="hero-icon-img" src="assets/icon/google-icons-gmail-icons-editable-vector-illustration_981536-461.avif" width="64" height="64" alt="">
               </a>
             </li>
             <li>
               <a class="icon-link" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="hero.scholar" aria-label="Google Scholar">
-                <img class="hero-icon-img" src="assets/icon/scholar.png" alt="">
+                <img class="hero-icon-img" src="assets/icon/scholar.png" width="64" height="63" alt="">
               </a>
             </li>
             <li>
               <a class="icon-link" href="https://github.com/llcshappy" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="hero.github" aria-label="GitHub">
-                <img class="hero-icon-img" src="assets/icon/github.png" alt="">
+                <img class="hero-icon-img" src="assets/icon/github.png" width="64" height="48" alt="">
               </a>
             </li>
           </ul>
@@ -188,7 +209,7 @@
       <ul class="pub-list">
         <li class="pub-row">
           <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="assets/pubs/3Dhumanpose.png" alt="Thumbnail: monocular 3D human pose" width="160" height="120" loading="lazy" decoding="async" data-i18n-alt="pub.alt.pose" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+            <img src="assets/pubs/3Dhumanpose.webp" alt="Thumbnail: monocular 3D human pose" width="640" height="262" loading="lazy" decoding="async" data-i18n-alt="pub.alt.pose" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
           </a>
           <div class="pub-body">
             <p class="pub-title"><em>Generalizing monocular 3D human pose estimation in the wild.</em></p>
@@ -201,7 +222,7 @@
         </li>
         <li class="pub-row">
           <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="assets/pubs/edge.jpg" alt="Thumbnail: edge detection" width="160" height="120" loading="lazy" decoding="async" data-i18n-alt="pub.alt.edge" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+            <img src="assets/pubs/edge.webp" alt="Thumbnail: edge detection" width="515" height="198" loading="lazy" decoding="async" data-i18n-alt="pub.alt.edge" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
           </a>
           <div class="pub-body">
             <p class="pub-title"><em>An accurate and efficient multi-category edge detection method.</em></p>
@@ -211,7 +232,7 @@
         </li>
         <li class="pub-row">
           <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="assets/pubs/action.png" alt="Thumbnail: action recognition" width="160" height="120" loading="lazy" decoding="async" data-i18n-alt="pub.alt.action" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+            <img src="assets/pubs/action.webp" alt="Thumbnail: action recognition" width="640" height="347" loading="lazy" decoding="async" data-i18n-alt="pub.alt.action" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
           </a>
           <div class="pub-body">
             <p class="pub-title"><em>A multi-task neural network for action recognition with 3D key-points.</em></p>
@@ -221,7 +242,7 @@
         </li>
         <li class="pub-row">
           <a class="pub-thumb" href="https://scholar.google.com/citations?user=oh6xqTsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="assets/pubs/tof.png" alt="Thumbnail: neural time-of-flight" width="160" height="120" loading="lazy" decoding="async" data-i18n-alt="pub.alt.tof" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
+            <img src="assets/pubs/tof.webp" alt="Thumbnail: neural time-of-flight" width="640" height="287" loading="lazy" decoding="async" data-i18n-alt="pub.alt.tof" onerror="this.onerror=null;this.src='assets/pubs/placeholder.svg';">
           </a>
           <div class="pub-body">
             <p class="pub-title"><em>Very power efficient neural time-of-flight.</em></p>
@@ -238,19 +259,20 @@
     <!--
       Visitor map (ClustrMaps) — how to activate:
       1. Register your site at https://clustrmaps.com/ and copy the embed snippet it gives you.
-      2. Replace YOUR_CLUSTRMAPS_ID below with the id (the d= value) from that snippet.
-      3. Remove the `hidden` attribute on this <section> so the block shows.
-      Note: this sends visitor location data to ClustrMaps (a third-party service).
-    -->
-    <section id="visitors" class="block visitors-block" hidden>
+      2. Uncomment the block below and replace YOUR_CLUSTRMAPS_ID with the id (the d= value).
+      Note: this sends visitor location data to ClustrMaps (a third-party service), so it is
+      commented out rather than merely `hidden` — a <script> inside a hidden element still
+      runs and still phones home on every page view.
+
+    <section id="visitors" class="block visitors-block">
       <h2 class="section-title" data-i18n="section.visitors">Visitors</h2>
       <hr class="section-rule">
       <p class="visitor-note" data-i18n="visitors.note">A live map of where readers around the world drop by from.</p>
       <div class="visitor-map">
-        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=YOUR_CLUSTRMAPS_ID&amp;cl=ffffff&amp;w=a"></script>
-        <p class="visitor-map__fallback" data-i18n="visitors.fallback" data-i18n-html="true">Add your <code>ClustrMaps</code> embed id (and remove <code>hidden</code>) to display the map.</p>
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=YOUR_CLUSTRMAPS_ID&cl=ffffff&w=a"></script>
       </div>
     </section>
+    -->
   </main>
 
   <button type="button" class="to-top" id="toTop" data-i18n-aria-label="aria.toTop" aria-label="Back to top">
